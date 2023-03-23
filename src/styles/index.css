@@ -299,10 +299,6 @@ section {
   background-color: rgb(0, 59, 149);
 }
 
-main {
-  display: none;
-}
-
 .hero {
   padding-top: 88%;
   background-color: rgba(0, 0, 0, 0.1);
