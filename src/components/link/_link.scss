@@ -1,0 +1,76 @@
+.link {
+    &-primary,
+    &-secondary,
+    &-success,
+    &-warning,
+    &-danger,
+    &-dark,
+    &-light {
+        white-space: nowrap;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        text-decoration-line: underline;
+        font-size: 18px;
+        @include mq(768px){
+            gap: 15px;
+            font-size: 27px;
+        }
+        &:hover {
+            text-decoration-color: inherit;
+        }
+        &[underline="hover"] {
+            text-decoration-line: none;
+            &:hover {
+                text-decoration-line: underline;
+            }
+        }
+        &[underline="always"] {
+            text-decoration-color: inherit;
+            text-decoration-color: currentColor;
+        }
+        &[underline="none"] {
+            text-decoration-line: none;
+        }
+        svg  {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+            // fill: currentColor;
+            @include mq(768px){
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    &-primary {
+        color: color(primary);
+        text-decoration-color: color(primary, 0.4);
+    }
+    &-secondary {
+        color: color(secondary);
+        text-decoration-color: color(secondary, 0.4);
+    }
+    &-success {
+        color: color(success);
+        text-decoration-color: color(success, 0.4);
+    }
+    &-warning {
+        color: color(warning);
+        text-decoration-color: color(warning, 0.4);
+    }
+    &-danger {
+        color: color(danger);
+        text-decoration-color: color(danger, 0.4);
+    }
+    &-dark {
+        color: color(dark);
+        text-decoration-color: color(dark, 0.4);
+    }
+    &-light {
+        color: color(light);
+        text-decoration-color: color(light, 0.4);
+    }
+}
