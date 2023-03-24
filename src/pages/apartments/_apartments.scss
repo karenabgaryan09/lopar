@@ -1,0 +1,218 @@
+.apartments-page {
+    .showcase {
+        &-title {
+            color: color(primary-text);
+        }
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px 80px;
+        margin-bottom: 100px;
+        & > .wrapper {
+            // flex: 2;
+        }
+        b {
+            font-weight: 600;
+        }
+        &-image {
+            // flex: 1;
+            align-self: center;
+            margin: 0 30px;
+        }
+        @include mq(1200px) {
+            flex-direction: row;
+
+            & > .wrapper {
+                flex: 2;
+            }
+
+            &-image {
+                margin: 0;
+                align-self: flex-start;
+                flex: 1;
+            }
+        }
+        @include mq(1400px) {
+            & > .wrapper {
+                flex: 3;
+            }
+
+            &-image {
+                flex: 1;
+            }
+        }
+    }
+}
+
+.apartment-card-wrapper {
+    margin-bottom: 70px;
+    @include mq(992px) {
+        position: relative;
+        padding-top: 15px;
+        padding-left: 15px;
+        &:nth-child(2) {
+            &:before {
+                border-color: color(primary);
+            }
+        }
+        &:nth-child(3) {
+            &:before {
+                border-color: color(primary-dark);
+            }
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            border: 15px solid color(primary-light);
+            border-width: 15px 0 0 15px;
+        }
+    }
+}
+
+.apartment-card {
+    padding: 20px 10px;
+    border: 1px solid color(primary);
+    display: grid;
+    // grid-gap: 30px;
+    position: relative;
+    background-color: color(light);
+
+    @include mq(992px) {
+        grid-template-columns: 336px 1fr;
+        align-items: end;
+        padding: 30px;
+    }
+    .card {
+        &-title {
+            margin-bottom: 20px;
+        }
+        &-header {
+            position: relative;
+            width: 100%;
+            padding-top: 70%;
+            height: 0;
+            @include mq(992px) {
+                flex: 1;
+                padding-top: 100%;
+            }
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-body {
+            padding: 30px;
+            @include mq(992px) {
+                padding: 0 30px;
+            }
+        }
+        &-footer {
+            display: flex;
+            justify-content: center;
+            @include mq(992px) {
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+            }
+            .btn {
+            }
+        }
+        &-location {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 14px;
+            color: color(primary-text);
+            margin-bottom: 20px;
+            .description {
+                color: color(primary-text);
+            }
+            @media screen and (min-width: 992px) and (max-width: 1280px) {
+                position: relative;
+                &:hover {
+                    .description {
+                        opacity: 1;
+                    }
+                }
+                svg {
+                    cursor: pointer;
+                }
+                .description {
+                    position: absolute;
+                    width: 300px;
+                    right: 100%;
+                    margin-right: 5px;
+                    font-size: 16px;
+                    top: 0;
+                    background-color: #fff;
+                    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+                    padding: 5px 10px;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
+            }
+            svg {
+                width: 30px;
+                height: 30px;
+                object-fit: contain;
+                flex-shrink: 0;
+            }
+            @include mq(992px) {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                max-width: 450px;
+                font-size: 20px;
+            }
+        }
+    }
+    .item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        &:not(:last-of-type) {
+            margin-bottom: 20px;
+        }
+        &-title {
+            font-size: 20px;
+            @include mq(1200px) {
+                font-size: 24px;
+            }
+        }
+        &-text {
+            font-size: 16px;
+            color: color(secondary);
+            @include mq(1200px) {
+                font-size: 20px;
+                position: relative;
+                padding-left: 20px;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 5px;
+                    transform: translateY(-50%);
+                    background-color: color(secondary);
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                }
+            }
+        }
+        svg {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+    }
+}

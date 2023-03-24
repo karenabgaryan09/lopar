@@ -43,7 +43,7 @@
                 const closestModal = e.target.closest(".modal");
                 if (dismiss) this.hideModal();
                 if (toggle) this.showModal(toggle);
-                if (closestModal && !modalContent) this.hideModal();
+                // if (closestModal && !modalContent) this.hideModal();
             });
         },
     };

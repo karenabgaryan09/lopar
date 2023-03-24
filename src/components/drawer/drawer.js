@@ -47,11 +47,11 @@
         },
         handleLock(removeScroll) {
             const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth + "px";
-            const navbar = document.querySelector(".navbar");
+            // const navbar = document.querySelector(".navbar");
 
             document.body.style.paddingRight = removeScroll ? scrollbarWidth : "";
             document.body.style.overflow = removeScroll ? "hidden" : "";
-            if (navbar) navbar.style.borderRight = removeScroll ? `${scrollbarWidth} solid transparent` : "";
+            // if (navbar) navbar.style.borderRight = removeScroll ? `${scrollbarWidth} solid transparent` : "";
         },
         setEvents() {
             document.addEventListener("click", (e) => {

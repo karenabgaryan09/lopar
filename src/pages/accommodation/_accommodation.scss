@@ -1,0 +1,149 @@
+.accommodation-page {
+    .showcase {
+        &-title {
+            text-align: center;
+            margin-bottom: 30px;
+            @include mq(768px) {
+                display: none;
+                // margin-bottom: 60px;
+            }
+        }
+        &-description {
+            margin-bottom: 60px;
+            text-align: left;
+            @include mq(768px) {
+                margin-bottom: 120px;
+            }
+        }
+    }
+
+    .accommodation-article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .btn {
+            @include mq(992px) {
+                margin-bottom: -20px;
+                align-self: flex-end;
+                order: 2;
+                display: inline-flex;
+            }
+        }
+        .gallery {
+            display: grid;
+            // grid-auto-rows: 40vw;
+            grid-auto-rows: 300px;
+            gap: 10px;
+            margin-bottom: 30px;
+            width: 100%;
+            grid-auto-rows: 200px;
+            @include mq(420px) {
+                grid-template-columns: repeat(12, 1fr);
+            }
+            @include mq(768px) {
+                grid-auto-rows: 150px;
+            }
+            @include mq(992px) {
+                grid-auto-rows: 200px;
+            }
+            @include mq(1100px) {
+                grid-auto-rows: 250px;
+            }
+            @include mq(1200px) {
+                grid-auto-rows: 250px;
+            }
+            @include mq(1400px) {
+                grid-auto-rows: 300px;
+            }
+            @include mq(992px) {
+                position: relative;
+                padding-top: 15px;
+                padding-left: 15px;
+                order: 3;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 15%;
+                    padding-top: 14%;
+                    height: 0;
+                    border: 30px solid color(primary-light);
+                    border-width: 15px 0 0 15px;
+                }
+            }
+            @include mq(1200px) {
+                padding-top: 30px;
+                padding-left: 30px;
+                &:before {
+                    border-width: 30px 0 0 30px;
+                    width: 20%;
+                    padding-top: 17%;
+                }
+            }
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                display: block;
+                @include mq(420px) {
+                    grid-column: 6 span;
+                    &:last-of-type {
+                        grid-column: 12 span;
+                    }
+                }
+                &.contain {
+                    object-fit: contain;
+                    background-color: rgb(0, 59, 149);
+                }
+
+                @include mq(768px) {
+                    &:nth-child(1) {
+                        grid-column: 3 span;
+                    }
+                    &:nth-child(2) {
+                        grid-column: 5 span;
+                    }
+                    &:nth-child(3) {
+                        grid-column: 4 span;
+                        grid-row: 2 span;
+                    }
+                    &:nth-child(4) {
+                        grid-column: 3 span;
+                    }
+                    &:nth-child(5) {
+                        grid-column: 5 span;
+                    }
+                }
+            }
+        }
+    }
+
+    .apartments {
+        margin-bottom: 70px;
+        &-title {
+            margin-bottom: 30px;
+        }
+        .gallery {
+        }
+    }
+    .rooms {
+        &-title {
+            margin-bottom: 30px;
+        }
+        .gallery {
+            img {
+                @include mq(768px) {
+                    &:nth-child(1) {
+                        grid-column: 5 span;
+                    }
+                    &:nth-child(2) {
+                        grid-column: 3 span;
+                    }
+               
+                }
+            }
+        }
+    }
+}

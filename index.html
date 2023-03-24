@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lopar</title>
-        <link rel="icon" href="./src/assets/images/favicon.png" />
+        <link rel="icon" href="/src/assets/images/favicon.png" />
         <meta name="keywords" content="website, template, sample" />
         <meta name="description" content="this sample created for prototyping purposes" />
         <meta name="author" content="Fiverr: karen_werner | LinkedIn https://www.linkedin.com/in/karenabgaryan09/" />
@@ -13,34 +13,30 @@
         <meta property="og:title" content="Lopar" />
         <meta property="og:type" content="website" />
         <meta property="og:description" content="this sample created for prototyping purposes" />
-        <meta property="og:image" content="./src/assets/images/og.png" />
+        <meta property="og:image" content="/src/assets/images/og.png" />
         <meta property="og:url" content="https://sample.com" />
         <!-- TWITTER CARDS -->
         <meta name="twitter:title" content="Lopar" />
         <meta name="twitter:description" content="this sample created for prototyping purposes" />
-        <meta name="twitter:image" content="./src/assets/images/og.png" />
+        <meta name="twitter:image" content="/src/assets/images/og.png" />
         <meta name="twitter:url" content="https://sample.com" />
         <meta name="twitter:card" content="summary" />
         <!-- STYLESHEET -->
         <link rel="stylesheet" href="./src/styles/index.css" />
         <!-- SCRIPTS -->
-        <script src="./src/scripts/load-cover.js" defer></script>
-        <script src="./src/scripts/script.js" defer></script>
-        <script src="./src/components/button/button.js" defer></script>
-        <script src="./src/components/navbar/navbar.js" defer></script>
-        <script src="./src/components/collapse/collapse.js" defer></script>
-        <!-- <script src="./src/components/dropdown/dropdown.js" defer></script> -->
-        <script src="./src/components/select/select.js" defer></script>
-        <script src="./src/components/drawer/drawer.js" defer></script>
-        <script src="./src/components/lightbox/lightbox.js" defer></script>
-        <script src="./src/components/modal/modal.js" defer></script>
+        <script src="/src/scripts/load-cover.js" defer></script>
+        <script src="/src/scripts/script.js" defer></script>
+        <script src="/src/components/button/button.js" defer></script>
+        <script src="/src/components/navbar/navbar.js" defer></script>
+        <script src="/src/components/select/select.js" defer></script>
+        <script src="/src/components/drawer/drawer.js" defer></script>
+        <script src="/src/components/modal/modal.js" defer></script>
         <!-- SWIPER -->
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
         <script src="/src/components/swiper/swiper.js" defer></script>
     </head>
     <body>
-        <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <button
@@ -67,7 +63,7 @@
                         </svg>
                     </button>
                     <a class="nav-link active" data-text="lopar" href="/index.html">lopar</a>
-                    <a class="nav-link" data-text="accommodation" href="#/">accommodation</a>
+                    <a class="nav-link" data-text="accommodation" href="/src/pages/accommodation/accommodation.html">accommodation</a>
                     <a class="nav-link" data-text="beaches" href="#/">beaches</a>
                     <a class="nav-link" data-text="find us" href="#/">find us</a>
                     <a class="nav-link" data-text="contact us" href="#/">contact us</a>
@@ -78,7 +74,12 @@
                             <a class="nav-link active" data-text="lopar" href="/index.html">lopar</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-text="accommodation" href="#/">accommodation</a>
+                            <a
+                                class="nav-link"
+                                data-text="accommodation"
+                                href="/src/pages/accommodation/accommodation.html"
+                                >accommodation</a
+                            >
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-text="beaches" href="#/">beaches</a>
@@ -110,17 +111,19 @@
                 </div>
             </div>
         </nav>
+
         <header
             class="hero"
             data-cover-src="/src/assets/images/background.jpg"
             style="background-image: url('/src/assets/images/background-thumbnail.jpg')"
         ></header>
+
         <main class="home-page">
             <section class="pictures">
                 <div class="container">
                     <h2 class="pictures-title display-2">Pictures of Lopar</h2>
                     <div class="swiper-custom-wrapper" id="lopar-pictures">
-                        <div class="swiper" data-toggle="modal" data-target="#firstModal">
+                        <div class="swiper" data-toggle="modal" data-target="#loparPicturesModal">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
@@ -249,37 +252,17 @@
                                 </svg>
                             </span>
                         </div>
-
-                        <div class="modal fade" style="display: none" id="firstModal" tabindex="-1">
-                            <button type="button" class="btn-close btn btn-circle-light" data-dismiss="modal">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path
-                                        d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
-                                    />
-                                </svg>
-                            </button>
-                            <img src="/src/assets/images/lopar-pictures/covers/image-10.jpg" alt="" />
-                        </div>
-
-                        <script>
-                            const modalToggle = document.querySelector("#lopar-pictures .swiper");
-                            const modalImg = document.querySelector("#lopar-pictures .modal img");
-                            modalToggle.addEventListener("click", () => {
-                                const activeImg = modalToggle.querySelector(".swiper-slide-active img");
-                                if (activeImg) modalImg.src = activeImg.src;
-                            });
-                        </script>
                     </div>
                 </div>
 
                 <div class="container">
-                    <div class="swiper-custom-wrapper" id="lopar-pictures-small">
+                    <div class="swiper-custom-wrapper" id="lopar-pictures-thumbnails">
                         <div class="swiper">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
-                                    <div class="swiper-image">
+                                    <div class="swiper-image active">
                                         <img
                                             src="/src/assets/images/lopar-pictures/thumbnails/image-1.jpg"
                                             class="card-img"
@@ -405,6 +388,152 @@
                         </div> -->
                     </div>
                 </div>
+
+                <div class="modal fade" style="display: none" id="loparPicturesModal" tabindex="-1">
+                    <button type="button" class="btn-close btn-lg btn btn-circle-light" data-dismiss="modal">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path
+                                d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+                            />
+                        </svg>
+                    </button>
+                    <div class="swiper-custom-wrapper" id="lopar-pictures-lightbox">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="swiper-image">
+                                        <img
+                                            src="/src/assets/images/lopar-pictures/covers/image-1.jpg"
+                                            class="card-img"
+                                            alt="image"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-image">
+                                        <img
+                                            src="/src/assets/images/lopar-pictures/covers/image-2.jpg"
+                                            class="card-img"
+                                            alt="image"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-image">
+                                        <img
+                                            src="/src/assets/images/lopar-pictures/covers/image-3.jpg"
+                                            class="card-img"
+                                            alt="image"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-image">
+                                        <img
+                                            src="/src/assets/images/lopar-pictures/covers/image-4.jpg"
+                                            class="card-img"
+                                            alt="image"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-image">
+                                        <img
+                                            src="/src/assets/images/lopar-pictures/covers/image-5.jpg"
+                                            class="card-img"
+                                            alt="image"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-image">
+                                        <img
+                                            src="/src/assets/images/lopar-pictures/covers/image-6.jpg"
+                                            class="card-img"
+                                            alt="image"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-image">
+                                        <img
+                                            src="/src/assets/images/lopar-pictures/covers/image-7.jpg"
+                                            class="card-img"
+                                            alt="image"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-image">
+                                        <img
+                                            src="/src/assets/images/lopar-pictures/covers/image-8.jpg"
+                                            class="card-img"
+                                            alt="image"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-image">
+                                        <img
+                                            src="/src/assets/images/lopar-pictures/covers/image-9.jpg"
+                                            class="card-img"
+                                            alt="image"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-image">
+                                        <img
+                                            src="/src/assets/images/lopar-pictures/covers/image-10.jpg"
+                                            class="card-img"
+                                            alt="image"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-image">
+                                        <img
+                                            src="/src/assets/images/lopar-pictures/covers/image-11.jpg"
+                                            class="card-img"
+                                            alt="image"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-custom-center">
+                            <span class="swiper-custom-angle prev btn btn-circle-light btn-xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                    <path
+                                        d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"
+                                    />
+                                </svg>
+                            </span>
+                            <span class="swiper-custom-angle next btn btn-circle-light btn-xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                    <path
+                                        d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"
+                                    />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <script>
+                    (function(){
+                        const loparPicturesLightbox = document.querySelector("#lopar-pictures-lightbox");
+                        // const swiperImage = loparPicturesLightbox.querySelector(".swiper-image");
+                        // const swiperCustomAngle = loparPicturesLightbox.querySelector(".swiper-custom-center");
+                        
+                        // swiperImage.addEventListener("click", (e) => e.stopPropagation());
+                        // swiperCustomAngle.addEventListener("click", (e) => e.stopPropagation());
+                        loparPicturesLightbox.addEventListener("click", (e) => e.stopPropagation());
+                    })()
+                </script> -->
             </section>
 
             <section class="tourist">
@@ -424,7 +553,7 @@
                 </div>
 
                 <div class="modal fade" style="display: none" id="tourist-modal" tabindex="-1">
-                    <button type="button" class="btn-close btn btn-circle-light" data-dismiss="modal">
+                    <button type="button" class="btn-lg btn-close btn btn-circle-light" data-dismiss="modal">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                             <path
                                 d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
@@ -458,19 +587,19 @@
                 </div>
             </section>
 
-            <section class="accomodation">
+            <section class="accommodation">
                 <div class="container">
-                    <h2 class="display-2 accomodation-title">Accommodation</h2>
-                    <div class="accomodation-content">
+                    <h2 class="display-2 accommodation-title">Accommodation</h2>
+                    <div class="accommodation-content">
                         <div class="appartment-studio studio">
                             <div class="studio-body">
                                 <img class="dynamic-image" src="/src/assets/images/accommodation/image-1.jpg" alt="" />
                                 <img src="/src/assets/images/accommodation/image-2.jpg" alt="" />
                                 <img src="/src/assets/images/accommodation/image-3.jpg" alt="" />
                             </div>
-                            <div class="studio-footer">
+                            <a href="/src/pages/apartments/apartments.html" class="studio-footer">
                                 <h5 class="display-5 studio-title">Apartments in Lopar</h5>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="rooms-studio studio">
@@ -479,9 +608,9 @@
                                 <img src="/src/assets/images/lopar-pictures/covers/image-10.jpg" alt="" />
                                 <img src="/src/assets/images/lopar-pictures/covers/image-10.jpg" alt="" />
                             </div>
-                            <div class="studio-footer">
-                                <h5 class="display-5 studio-title">Apartments in Lopar</h5>
-                            </div>
+                            <a href="/src/pages/rooms/rooms.html" class="studio-footer">
+                                <h5 class="display-5 studio-title">Rooms in Lopar</h5>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -506,7 +635,7 @@
                 </div>
 
                 <div class="modal fade" style="display: none" id="sports-modal" tabindex="-1">
-                    <button type="button" class="btn-close btn btn-circle-light" data-dismiss="modal">
+                    <button type="button" class="btn-lg btn-close btn btn-circle-light" data-dismiss="modal">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                             <path
                                 d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
@@ -542,7 +671,7 @@
                 </div>
 
                 <div class="modal fade" style="display: none" id="history-modal" tabindex="-1">
-                    <button type="button" class="btn-close btn btn-circle-light" data-dismiss="modal">
+                    <button type="button" class="btn-lg btn-close btn btn-circle-light" data-dismiss="modal">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                             <path
                                 d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
@@ -580,7 +709,7 @@
                 </div>
 
                 <div class="modal fade" style="display: none" id="places-modal" tabindex="-1">
-                    <button type="button" class="btn-close btn btn-circle-light" data-dismiss="modal">
+                    <button type="button" class="btn-lg btn-close btn btn-circle-light" data-dismiss="modal">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                             <path
                                 d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
@@ -605,12 +734,7 @@
                 <div class="info">
                     <h2 class="display-2 footer-brand">Lopar260</h2>
                     <div class="info-list">
-                        <a
-                            href="https://www.google.com/maps/place/Lopar+260,+51281,+Lopar,+Croatia/@44.8296152,14.7296899,17z/data=!3m1!4b1!4m5!3m4!1s0x4763a65ecc8bee83:0xb8c3e866a0d2f050!8m2!3d44.8296152!4d14.7318786"
-                            target="_blank"
-                            class="info-link link-light"
-                            underline="hover"
-                        >
+                        <a href="#/" class="info-link link-light" underline="hover">
                             <svg
                                 width="24"
                                 height="24"
@@ -631,7 +755,7 @@
                             </svg>
                             Lopar 260, 51281, Lopar, Croatia</a
                         >
-                        <a href="tel:385 51 775 629" class="info-link link-light" underline="hover">
+                        <a href="#/" class="info-link link-light" underline="hover">
                             <svg
                                 width="22"
                                 height="22"
@@ -648,12 +772,7 @@
                             </svg>
                             +385 51 775 629</a
                         >
-                        <a
-                            href="mailto:lopar260@gmail.com"
-                            target="_blank"
-                            class="info-link link-light"
-                            underline="hover"
-                        >
+                        <a href="#/" class="info-link link-light" underline="hover">
                             <svg
                                 width="24"
                                 height="24"
@@ -685,11 +804,11 @@
                 </div>
 
                 <div class="details">
-                    <a href="src/pages/appartments/appartments.html" class="card detail-card">
-                        <img src="/src/assets/images/appartments/covers/image-3.jpg" alt="" class="card-image" />
+                    <a href="/src/pages/apartments/apartments.html" class="card detail-card btn btn-text-primary">
+                        <img src="/src/assets/images/apartments/covers/image-3.jpg" alt="" class="card-image" />
                         <h4 class="card-title">Apartments in Lopar</h4>
                     </a>
-                    <a href="src/pages/appartments/rooms.html" class="card detail-card">
+                    <a href="/src/pages/apartments/rooms.html" class="card detail-card btn btn-text-primary">
                         <img src="/src/assets/images/rooms/covers/image-3.jpg" alt="" class="card-image" />
                         <h4 class="card-title">Rooms in Lopar</h4>
                     </a>

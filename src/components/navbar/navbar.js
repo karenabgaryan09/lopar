@@ -124,9 +124,9 @@
 //     // navbarInverted.switchDropdownCollapse();  // switch not going to work in react
 // })();
 
-const Navbar = (function () {
-    window.addEventListener("scroll", () => {
-        if (!this.navbar) this.navbar = document.querySelector(".navbar");
-        this.navbar.classList.toggle("shrink", window.scrollY > 0);
-    }); //window.scrollY > 300
-})();
+// const Navbar = (function () {
+//     window.addEventListener("scroll", () => {
+//         if (!this.navbar) this.navbar = document.querySelector(".navbar");
+//         this.navbar.classList.toggle("shrink", window.scrollY > 0);
+//     }); //window.scrollY > 300
+// })();
