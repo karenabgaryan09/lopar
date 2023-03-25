@@ -94,12 +94,11 @@
                 grid-gap: 10px;
                 // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
                 grid-template-columns: 1fr 1fr;
-                // grid-auto-rows: 30vw;
+                grid-auto-rows: 30vw;
                 @include mq(992px) {
                     height: 100%;
                     top: 0%;
                     transform: none;
-                    // grid-template-rows: repeat(3, calc(100% / 3));
                     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     
                     img {
