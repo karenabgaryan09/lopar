@@ -1623,8 +1623,8 @@ section {
     position: relative;
     width: 90%;
     height: 0;
-    padding-top: 40%;
-    width: 70%;
+    padding-top: 80vh;
+    width: 100%;
   }
 }
 .tourist .modal .gallery {
@@ -1734,6 +1734,13 @@ section {
     grid-column: 5 span;
   }
 }
+.accommodation .studio {
+  display: block;
+  transition: transform 0.3s ease;
+}
+.accommodation .studio:hover {
+  transform: scale(1.05);
+}
 .accommodation .studio-title {
   text-align: center;
 }
@@ -1746,10 +1753,6 @@ section {
   display: block;
   padding: 18px;
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.12);
-  transition: box-shadow 0.3s ease;
-}
-.accommodation .studio-footer:hover:not(:active) {
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12);
 }
 .accommodation .studio img {
   width: 100%;
@@ -1854,8 +1857,8 @@ section {
     position: relative;
     width: 90%;
     height: 0;
-    padding-top: 40%;
-    width: 70%;
+    padding-top: 80vh;
+    width: 100%;
   }
 }
 .sports .modal .gallery {
@@ -2000,8 +2003,8 @@ section {
     position: relative;
     width: 90%;
     height: 0;
-    padding-top: 40%;
-    width: 70%;
+    padding-top: 80vh;
+    width: 100%;
   }
 }
 .history .modal .gallery {
@@ -2139,8 +2142,8 @@ section {
     position: relative;
     width: 90%;
     height: 0;
-    padding-top: 40%;
-    width: 70%;
+    padding-top: 80vh;
+    width: 100%;
   }
 }
 .places .modal .gallery {
@@ -2414,8 +2417,8 @@ section {
     position: relative;
     width: 90%;
     height: 0;
-    padding-top: 33%;
-    width: 70%;
+    padding-top: 80vh;
+    width: 100%;
   }
 }
 .apartment-card-wrapper .modal > .wrapper .gallery {
@@ -2435,6 +2438,7 @@ section {
     top: 0%;
     transform: none;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 100%;
   }
 }
 .apartment-card-wrapper .modal > .wrapper .gallery img {

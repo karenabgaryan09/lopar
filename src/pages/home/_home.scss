@@ -279,8 +279,8 @@
                 position: relative;
                 width: 90%;
                 height: 0;
-                padding-top: 40%;
-                width: 70%;
+                padding-top: 80vh;
+                width: 100%;
             }
         }
         .gallery {
@@ -424,6 +424,11 @@
     }
 
     .studio {
+        display: block;
+        transition: transform .3s ease;
+        &:hover {
+            transform: scale(1.05);
+        }
         &-title {
             text-align: center;
         }
@@ -437,10 +442,10 @@
             display: block;
             padding: 18px;
             box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.12);
-            transition: box-shadow 0.3s ease;
-            &:hover:not(:active) {
-                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12);
-            }
+            // transition: box-shadow 0.3s ease;
+            // &:hover:not(:active) {
+            //     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12);
+            // }
         }
         img {
             width: 100%;
@@ -545,8 +550,8 @@
                 position: relative;
                 width: 90%;
                 height: 0;
-                padding-top: 40%;
-                width: 70%;
+                padding-top: 80vh;
+                width: 100%;
             }
         }
         .gallery {
@@ -711,8 +716,8 @@
                 position: relative;
                 width: 90%;
                 height: 0;
-                padding-top: 40%;
-                width: 70%;
+                padding-top: 80vh;
+                width: 100%;
             }
         }
         .gallery {
@@ -874,8 +879,8 @@
                 position: relative;
                 width: 90%;
                 height: 0;
-                padding-top: 40%;
-                width: 70%;
+                padding-top: 80vh;
+                width: 100%;
             }
         }
         .gallery {
