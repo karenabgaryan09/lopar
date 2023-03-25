@@ -2405,6 +2405,56 @@ section {
     border-width: 15px 0 0 15px;
   }
 }
+@media screen and (min-width: 992px) {
+  .apartment-card-wrapper .modal > .wrapper {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    width: 90%;
+    height: 0;
+    padding-top: 33%;
+    width: 70%;
+  }
+}
+.apartment-card-wrapper .modal > .wrapper .gallery {
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (min-width: 992px) {
+  .apartment-card-wrapper .modal > .wrapper .gallery {
+    height: 100%;
+    top: 0%;
+    transform: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+.apartment-card-wrapper .modal > .wrapper .gallery img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 992px) {
+  .apartment-card-wrapper .modal > .wrapper .gallery img:last-of-type {
+    grid-column: 2 span;
+  }
+}
+.apartment-card-wrapper .modal .gallery {
+  width: 90%;
+}
+.apartment-card-wrapper .modal .btn-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 999;
+}
 
 .apartment-card {
   padding: 20px 10px;
@@ -2429,11 +2479,26 @@ section {
   padding-top: 70%;
   height: 0;
 }
+.apartment-card .card-header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
 @media screen and (min-width: 992px) {
   .apartment-card .card-header {
     flex: 1;
     padding-top: 100%;
   }
+}
+.apartment-card .card-header:hover:after {
+  opacity: 1;
 }
 .apartment-card .card-header img {
   position: absolute;
