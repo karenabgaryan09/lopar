@@ -5,11 +5,11 @@
     justify-content: space-between;
     // padding-top: 1.5rem;
     // padding-bottom: 1.5rem;
-    min-height: 73px;
+    min-height: 60px;
     background-color: color(primary-dark);
     transition: padding 0.3s ease;
     @include mq(992px) {
-        min-height: 100px;
+        min-height: 70px;
     }
     &.shrink {
         padding-top: 0.5rem;
@@ -23,7 +23,7 @@
         gap:10px 40px;
         flex-wrap: wrap;
         @include mq(1400px) {
-            gap: 80px;
+            gap: 50px;
 
         }
     }
@@ -46,13 +46,13 @@
         font-weight: 400;
         letter-spacing: 3%;
         @include mq(992px) {
-            font-size: 30px;
+            font-size: 25px;
             flex: 1;
         }
-        @include mq(1400px) {
-            font-size: 40px;
+        // @include mq(1400px) {
+        //     font-size: 40px;
            
-        }
+        // }
     }
 
     &-collapse {
@@ -66,18 +66,19 @@
         width: fit-content;
         min-width: 70px;
         &-toggle {
-            padding: 3px;
+            padding: 3px 10px;
             font-weight: 400;
-            font-size: 20px;
+            // font-size: 20px;
             font-family: "Open Sans";
             color: color(light);
             border-radius: 0;
+            &-icon {
+                margin-left: 2px !important;
+            }
         }
-        @include mq(576px){
-            min-width: 102px;
+        @include mq(992px){
             .select-toggle {
-
-                padding: 6px 18px; 
+                // padding: 6px 18px; 
                 background-color: color(primary);
                 &:hover {
                     background-color: color(primary-hover);
@@ -94,9 +95,9 @@
         margin-bottom: 0;
         list-style: none;
         margin-right: auto;
-        @include mq(1400px) {
-            gap: 60px
-        }
+        // @include mq(1400px) {
+        //     gap: 60px
+        // }
       
         .nav-link {
             // padding: 0.5rem 1rem;
@@ -114,9 +115,9 @@
             white-space: nowrap;
             transition: 0.3s ease;
             position: relative;
-            @include mq(1400px){
-                font-size: 20px;
-            }
+            // @include mq(1400px){
+            //     font-size: 20px;
+            // }
             &.active {
                 font-weight: bold;
                 text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);

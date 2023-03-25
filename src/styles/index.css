@@ -75,14 +75,14 @@ code {
 }
 
 .display-4 {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
   color: rgba(27, 75, 85,1);
   margin-bottom: 10px;
 }
 
 .display-5 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 27.24px;
   color: rgba(27, 75, 85,1);
@@ -97,7 +97,7 @@ code {
     font-size: 5rem;
   }
   .display-2 {
-    font-size: 64px;
+    font-size: 50px;
   }
   .display-3 {
     font-size: 40px;
@@ -105,11 +105,11 @@ code {
     margin-bottom: 60px;
   }
   .display-4 {
-    font-size: 36px;
+    font-size: 28px;
     margin-bottom: 20px;
   }
   .display-5 {
-    font-size: 32px;
+    font-size: 25px;
     line-height: 43.58px;
   }
   .display-6 {
@@ -117,7 +117,7 @@ code {
   }
 }
 .text-1 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24.51px;
   color: rgba(27, 75, 85,1);
@@ -125,14 +125,14 @@ code {
 }
 @media screen and (min-width: 786px) {
   .text-1 {
-    font-size: 23px;
+    font-size: 20px;
     line-height: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .text-1 {
-    font-size: 27px;
-    line-height: 36.77px;
+    font-size: 23px;
+    line-height: 35px;
   }
 }
 
@@ -292,7 +292,7 @@ section {
 @media screen and (min-width: 992px) {
   .hero {
     padding-top: 0;
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 70px);
   }
 }
 
@@ -310,15 +310,12 @@ section {
   }
 }
 .footer > .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 120px;
+  display: grid;
+  margin-bottom: 100px;
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 992px) {
   .footer > .container {
-    margin-bottom: 170px;
-    flex-direction: row;
+    grid-template-columns: 1.5fr 1fr;
   }
 }
 .footer-brand {
@@ -342,7 +339,7 @@ section {
   }
 }
 .footer .info {
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 .footer .info-list {
   display: flex;
@@ -363,7 +360,7 @@ section {
   max-width: -moz-fit-content;
   max-width: fit-content;
   margin: 0 auto;
-  gap: 20px;
+  gap: 10px;
 }
 @media screen and (min-width: 370px) {
   .footer .details {
@@ -385,7 +382,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   padding: 10px;
 }
 @media screen and (min-width: 1100px) {
@@ -395,16 +392,15 @@ section {
   }
 }
 .footer .details .detail-card .card-image {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   -o-object-fit: cover;
      object-fit: cover;
   transition: transform 0.3s ease;
 }
 .footer .details .detail-card .card-title {
-  font-size: 18px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 20px;
   max-width: 90%;
   text-align: center;
   color: rgba(251, 251, 251,1);
@@ -413,21 +409,16 @@ section {
   .footer .details .detail-card .card-title {
     text-align: left;
     max-width: none;
-    font-size: 27px;
+    font-size: 20px;
   }
 }
 .footer-copyright {
   text-align: center;
   padding: 15px;
   background-color: rgb(33, 29, 26);
-  font-size: 18px;
   font-weight: 400;
   line-height: 24.51px;
-}
-@media screen and (min-width: 768px) {
-  .footer-copyright {
-    font-size: 24px;
-  }
+  font-size: 16x;
 }
 
 .navbar {
@@ -435,13 +426,13 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  min-height: 73px;
+  min-height: 60px;
   background-color: rgba(7, 72, 86,1);
   transition: padding 0.3s ease;
 }
 @media screen and (min-width: 992px) {
   .navbar {
-    min-height: 100px;
+    min-height: 70px;
   }
 }
 .navbar.shrink {
@@ -457,7 +448,7 @@ section {
 }
 @media screen and (min-width: 1400px) {
   .navbar > .container-fluid {
-    gap: 80px;
+    gap: 50px;
   }
 }
 .navbar-toggler {
@@ -479,13 +470,8 @@ section {
 }
 @media screen and (min-width: 992px) {
   .navbar-brand {
-    font-size: 30px;
+    font-size: 25px;
     flex: 1;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .navbar-brand {
-    font-size: 40px;
   }
 }
 .navbar-collapse {
@@ -499,19 +485,17 @@ section {
   min-width: 70px;
 }
 .navbar .select-toggle {
-  padding: 3px;
+  padding: 3px 10px;
   font-weight: 400;
-  font-size: 20px;
   font-family: "Open Sans";
   color: rgba(251, 251, 251,1);
   border-radius: 0;
 }
-@media screen and (min-width: 576px) {
-  .navbar .select {
-    min-width: 102px;
-  }
+.navbar .select-toggle-icon {
+  margin-left: 2px !important;
+}
+@media screen and (min-width: 992px) {
   .navbar .select .select-toggle {
-    padding: 6px 18px;
     background-color: rgba(91, 161, 176,1);
   }
   .navbar .select .select-toggle:hover {
@@ -526,11 +510,6 @@ section {
   margin-bottom: 0;
   list-style: none;
   margin-right: auto;
-}
-@media screen and (min-width: 1400px) {
-  .navbar-nav {
-    gap: 60px;
-  }
 }
 .navbar-nav .nav-link {
   text-transform: uppercase;
@@ -547,11 +526,6 @@ section {
   white-space: nowrap;
   transition: 0.3s ease;
   position: relative;
-}
-@media screen and (min-width: 1400px) {
-  .navbar-nav .nav-link {
-    font-size: 20px;
-  }
 }
 .navbar-nav .nav-link.active {
   font-weight: bold;
@@ -1331,8 +1305,8 @@ section {
 }
 @media screen and (min-width: 768px) {
   .link-primary, .link-secondary, .link-success, .link-warning, .link-danger, .link-dark, .link-light {
-    gap: 15px;
-    font-size: 27px;
+    gap: 10px;
+    font-size: 20px;
   }
 }
 .link-primary:hover, .link-secondary:hover, .link-success:hover, .link-warning:hover, .link-danger:hover, .link-dark:hover, .link-light:hover {
@@ -1356,12 +1330,6 @@ section {
   height: 20px;
   -o-object-fit: contain;
      object-fit: contain;
-}
-@media screen and (min-width: 768px) {
-  .link-primary svg, .link-secondary svg, .link-success svg, .link-warning svg, .link-danger svg, .link-dark svg, .link-light svg {
-    width: 30px;
-    height: 30px;
-  }
 }
 .link-primary {
   color: rgba(91, 161, 176,1);
@@ -1407,7 +1375,7 @@ section {
   }
 }
 @media screen and (max-width: 768px) {
-  .pictures .container:first-of-type {
+  .pictures .container-small:first-of-type {
     padding: 0;
   }
 }
@@ -1416,7 +1384,7 @@ section {
 }
 .pictures #lopar-pictures .swiper {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.2);
-  max-width: 1210px;
+  max-width: 1000px;
   margin: 0 auto;
   padding-top: 70%;
   cursor: pointer;
@@ -1458,7 +1426,7 @@ section {
 @media screen and (min-width: 1400px) {
   .pictures #lopar-pictures .swiper-custom-center {
     width: calc(100vw - 70px);
-    max-width: calc(100% + 30px);
+    max-width: calc(100% - 80px);
   }
 }
 .pictures #lopar-pictures .swiper-image {
@@ -1573,40 +1541,40 @@ section {
 }
 .tourist > .container-small {
   display: grid;
-  align-items: center;
   justify-content: center;
   text-align: center;
-  grid-gap: 30px 120px;
+  grid-gap: 20px 120px;
 }
 @media screen and (min-width: 992px) {
   .tourist > .container-small {
     text-align: left;
-    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-rows: auto 1fr;
-    grid-gap: 53px 60px;
+    grid-gap: 30px 60px;
   }
 }
 @media screen and (min-width: 1300px) {
   .tourist > .container-small {
-    grid-gap: 53px 120px;
+    grid-gap: 40px 120px;
   }
 }
 .tourist-title {
   margin-bottom: 0px;
 }
 .tourist-image {
-  width: 85%;
   margin: 0 auto;
   height: 0;
-  padding-top: 110%;
+  width: 73%;
+  padding-top: 90%;
   position: relative;
+  align-self: center;
   cursor: pointer;
 }
 @media screen and (min-width: 992px) {
   .tourist-image {
     grid-row: 2 span;
     width: 100%;
-    padding-top: 135%;
+    padding-top: 120%;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -1805,22 +1773,21 @@ section {
 }
 .sports > .container-small {
   display: grid;
-  align-items: center;
   justify-content: center;
   text-align: center;
-  grid-gap: 30px 120px;
+  grid-gap: 20px 120px;
 }
 @media screen and (min-width: 992px) {
   .sports > .container-small {
     text-align: left;
-    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-rows: auto 1fr;
-    grid-gap: 53px 60px;
+    grid-gap: 30px 60px;
   }
 }
 @media screen and (min-width: 1300px) {
   .sports > .container-small {
-    grid-gap: 53px 120px;
+    grid-gap: 40px 120px;
   }
 }
 .sports-title {
@@ -1831,18 +1798,19 @@ section {
   color: rgba(251, 251, 251,1);
 }
 .sports-image {
-  width: 85%;
   margin: 0 auto;
   height: 0;
-  padding-top: 110%;
+  width: 73%;
+  padding-top: 90%;
   position: relative;
+  align-self: center;
   cursor: pointer;
 }
 @media screen and (min-width: 992px) {
   .sports-image {
     grid-row: 2 span;
     width: 100%;
-    padding-top: 135%;
+    padding-top: 120%;
   }
 }
 .sports-image:after {
@@ -1946,19 +1914,19 @@ section {
   display: grid;
   justify-content: center;
   text-align: center;
-  grid-gap: 30px 120px;
+  grid-gap: 20px 120px;
 }
 @media screen and (min-width: 992px) {
   .history > .container-small {
     text-align: left;
     grid-template-columns: 1fr 1.5fr;
     grid-template-rows: auto 1fr;
-    grid-gap: 53px 60px;
+    grid-gap: 30px 60px;
   }
 }
 @media screen and (min-width: 1300px) {
   .history > .container-small {
-    grid-gap: 53px 120px;
+    grid-gap: 40px 120px;
   }
 }
 .history-title {
@@ -1976,18 +1944,19 @@ section {
   }
 }
 .history-image {
-  width: 85%;
   margin: 0 auto;
   height: 0;
-  padding-top: 110%;
+  width: 73%;
+  padding-top: 90%;
   position: relative;
+  align-self: center;
   cursor: pointer;
 }
 @media screen and (min-width: 992px) {
   .history-image {
     grid-row: 2 span;
     width: 100%;
-    padding-top: 135%;
+    padding-top: 120%;
   }
 }
 .history-image:after {
@@ -2089,22 +2058,21 @@ section {
 }
 .places > .container-small {
   display: grid;
-  align-items: center;
   justify-content: center;
   text-align: center;
-  grid-gap: 30px 120px;
+  grid-gap: 20px 120px;
 }
 @media screen and (min-width: 992px) {
   .places > .container-small {
     text-align: left;
-    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-rows: auto 1fr;
-    grid-gap: 53px 60px;
+    grid-gap: 30px 60px;
   }
 }
 @media screen and (min-width: 1300px) {
   .places > .container-small {
-    grid-gap: 53px 120px;
+    grid-gap: 40px 120px;
   }
 }
 .places-title {
@@ -2115,18 +2083,19 @@ section {
   color: rgba(251, 251, 251,1);
 }
 .places-image {
-  width: 85%;
   margin: 0 auto;
   height: 0;
-  padding-top: 110%;
+  width: 73%;
+  padding-top: 90%;
   position: relative;
+  align-self: center;
   cursor: pointer;
 }
 @media screen and (min-width: 992px) {
   .places-image {
     grid-row: 2 span;
     width: 100%;
-    padding-top: 135%;
+    padding-top: 120%;
   }
 }
 .places-image:after {
@@ -2253,7 +2222,6 @@ section {
   display: grid;
   grid-auto-rows: 300px;
   gap: 10px;
-  margin-bottom: 30px;
   width: 100%;
   grid-auto-rows: 200px;
 }
@@ -2284,7 +2252,7 @@ section {
 }
 @media screen and (min-width: 1400px) {
   .accommodation-page .accommodation-article .gallery {
-    grid-auto-rows: 300px;
+    grid-auto-rows: 270px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -2356,7 +2324,7 @@ section {
   }
 }
 .accommodation-page .apartments {
-  margin-bottom: 70px;
+  margin-bottom: 150px;
 }
 .accommodation-page .apartments-title {
   margin-bottom: 30px;
@@ -2543,7 +2511,6 @@ section {
     right: 20px;
     top: 20px;
     max-width: 450px;
-    font-size: 20px;
   }
 }
 .apartment-card .item {
@@ -2555,20 +2522,20 @@ section {
   margin-bottom: 20px;
 }
 .apartment-card .item-title {
-  font-size: 20px;
+  font-size: 18px;
 }
 @media screen and (min-width: 1200px) {
   .apartment-card .item-title {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 .apartment-card .item-text {
-  font-size: 16px;
+  font-size: 14px;
   color: rgba(130, 130, 130,1);
 }
 @media screen and (min-width: 1200px) {
   .apartment-card .item-text {
-    font-size: 20px;
+    font-size: 16px;
     position: relative;
     padding-left: 20px;
   }

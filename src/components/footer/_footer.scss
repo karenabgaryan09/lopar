@@ -9,13 +9,11 @@
     color: color(light);
     padding-bottom: 0;
     & > .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-bottom: 120px;
-        @include mq(1100px) {
-            margin-bottom: 170px;
-            flex-direction: row;
+        display: grid;
+        // justify-content: space-between;
+        margin-bottom: 100px;
+        @include mq(992px) {
+            grid-template-columns: 1.5fr 1fr;
         }
     }
     &-brand {
@@ -37,7 +35,7 @@
     
     }
     .info {
-        margin-bottom: 70px;
+        margin-bottom: 30px;
         &-list {
             display: flex;
             flex-direction: column;
@@ -57,7 +55,7 @@
         max-width: fit-content;
         margin: 0 auto;
         // margin-bottom: 80px;
-        gap: 20px;
+        gap: 10px;
         @include mq(370px) {
             flex-direction: row;
         }
@@ -75,7 +73,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 20px;
+            gap: 10px;
             padding: 10px;
             // &:hover {
             //     .card-image {
@@ -89,22 +87,22 @@
             
             .card {
                 &-image {
-                    width: 150px;
-                    height: 150px;
+                    width: 120px;
+                    height: 120px;
                     object-fit: cover;
                     transition: transform .3s ease;
                 }
                 &-title {
-                    font-size: 18px;
+                    // font-size: 18px;
                     font-weight: 400;
-                    line-height: 24px;
+                    line-height: 20px;
                     max-width: 90%;
                     text-align: center;
                     color: color(light);
                     @include mq(1100px) {
                         text-align: left;
                         max-width: none;
-                        font-size: 27px;
+                        font-size: 20px;
                     }
                 }
             }
@@ -114,11 +112,8 @@
         text-align: center;
         padding: 15px;
         background-color: rgba(33, 29, 26, 1);
-        font-size: 18px;
         font-weight: 400;
         line-height: 24.51px;
-        @include mq(768px) {
-            font-size: 24px;
-        }
+        font-size: 16x;
     }
 }

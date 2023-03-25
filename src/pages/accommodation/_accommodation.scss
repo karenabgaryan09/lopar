@@ -35,7 +35,7 @@
             // grid-auto-rows: 40vw;
             grid-auto-rows: 300px;
             gap: 10px;
-            margin-bottom: 30px;
+            // margin-bottom: 30px;
             width: 100%;
             grid-auto-rows: 200px;
             @include mq(420px) {
@@ -54,7 +54,7 @@
                 grid-auto-rows: 250px;
             }
             @include mq(1400px) {
-                grid-auto-rows: 300px;
+                grid-auto-rows: 270px;
             }
             @include mq(992px) {
                 position: relative;
@@ -121,7 +121,7 @@
     }
 
     .apartments {
-        margin-bottom: 70px;
+        margin-bottom: 150px;
         &-title {
             margin-bottom: 30px;
         }

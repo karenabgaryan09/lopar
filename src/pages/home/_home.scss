@@ -10,7 +10,7 @@
             margin-bottom: 70px;
         }
     }
-    .container:first-of-type {
+    .container-small:first-of-type {
         @media screen and (max-width: 768px) {
             padding: 0;
         }
@@ -21,7 +21,7 @@
             box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.2);
 
             // overflow: visible;
-            max-width: 1210px;
+            max-width: 1000px;
             margin: 0 auto;
             padding-top: 70%;
             cursor: pointer;
@@ -62,7 +62,7 @@
                 // max-width: 95%;
                 @include mq(1400px) {
                     width: calc(100vw - 70px);
-                    max-width: calc(100% + 30px);
+                    max-width: calc(100% - 80px);
                     // max-width: none;
                 }
             }
@@ -200,38 +200,38 @@
     }
     & > .container-small {
         display: grid;
-        align-items: center;
+        // align-items: center;
         justify-content: center;
         text-align: center;
-        grid-gap: 30px 120px;
+        grid-gap: 20px 120px;
         @include mq(992px) {
             text-align: left;
-            grid-template-columns: 1.3fr 1fr;
+            grid-template-columns: 1.5fr 1fr;
             grid-template-rows: auto 1fr;
-            grid-gap: 53px 60px;
+            grid-gap: 30px 60px;
         }
         @include mq(1300px) {
-            grid-gap: 53px 120px;
+            grid-gap: 40px 120px;
         }
     }
     &-title {
         margin-bottom: 0px;
-        @include mq(992px) {
-        }
+     
     }
     &-description {
     }
     &-image {
-        width: 85%;
         margin: 0 auto;
         height: 0;
-        padding-top: 110%;
+        width: 73%;
+    padding-top: 90%;
         position: relative;
+        align-self: center;
         cursor: pointer;
         @include mq(992px) {
             grid-row: 2 span;
             width: 100%;
-            padding-top: 135%;
+            padding-top: 120%;
         }
         @include mq(1300px) {
             margin-top: -60px;
@@ -463,18 +463,18 @@
     }
     & > .container-small {
         display: grid;
-        align-items: center;
+        // align-items: center;
         justify-content: center;
         text-align: center;
-        grid-gap: 30px 120px;
+        grid-gap: 20px 120px;
         @include mq(992px) {
             text-align: left;
-            grid-template-columns: 1.3fr 1fr;
+            grid-template-columns: 1.5fr 1fr;
             grid-template-rows: auto 1fr;
-            grid-gap: 53px 60px;
+            grid-gap: 30px 60px;
         }
         @include mq(1300px) {
-            grid-gap: 53px 120px;
+            grid-gap: 40px 120px;
         }
     }
     &-title {
@@ -487,16 +487,17 @@
         color: color(light);
     }
     &-image {
-        width: 85%;
         margin: 0 auto;
         height: 0;
-        padding-top: 110%;
+        width: 73%;
+    padding-top: 90%;
         position: relative;
+        align-self: center;
         cursor: pointer;
         @include mq(992px) {
             grid-row: 2 span;
             width: 100%;
-            padding-top: 135%;
+            padding-top: 120%;
         }
         @include mq(1300px) {
             // margin-top: -60px;
@@ -630,15 +631,15 @@
         // align-items: center;
         justify-content: center;
         text-align: center;
-        grid-gap: 30px 120px;
+        grid-gap: 20px 120px;
         @include mq(992px) {
             text-align: left;
             grid-template-columns: 1fr 1.5fr;
             grid-template-rows: auto 1fr;
-            grid-gap: 53px 60px;
+            grid-gap: 30px 60px;
         }
         @include mq(1300px) {
-            grid-gap: 53px 120px;
+            grid-gap: 40px 120px;
         }
     }
     &-title {
@@ -654,22 +655,19 @@
         }
     }
     &-image {
-        width: 85%;
         margin: 0 auto;
         height: 0;
-        padding-top: 110%;
+        width: 73%;
+    padding-top: 90%;
         position: relative;
+        align-self: center;
         cursor: pointer;
         @include mq(992px) {
             grid-row: 2 span;
-            // grid-row: 1;
-            // grid-column: 1;
             width: 100%;
-            padding-top: 135%;
+            padding-top: 120%;
         }
-        @include mq(1300px) {
-            // margin-top: -60px;
-        }
+   
         &:after {
             content: "";
             position: absolute;
@@ -681,8 +679,6 @@
             pointer-events: none;
             opacity: 0;
             transition: opacity 0.3s ease;
-            // border-bottom-right-radius: 150px;
-            // border-bottom-left-radius: 150px;
         }
         &:hover {
             &:after {
@@ -798,18 +794,18 @@
     }
     & > .container-small {
         display: grid;
-        align-items: center;
+        // align-items: center;
         justify-content: center;
         text-align: center;
-        grid-gap: 30px 120px;
+        grid-gap: 20px 120px;
         @include mq(992px) {
             text-align: left;
-            grid-template-columns: 1.3fr 1fr;
+            grid-template-columns: 1.5fr 1fr;
             grid-template-rows: auto 1fr;
-            grid-gap: 53px 60px;
+            grid-gap: 30px 60px;
         }
         @include mq(1300px) {
-            grid-gap: 53px 120px;
+            grid-gap: 40px 120px;
         }
     }
     &-title {
@@ -822,20 +818,19 @@
         color: color(light);
     }
     &-image {
-        width: 85%;
         margin: 0 auto;
         height: 0;
-        padding-top: 110%;
+        width: 73%;
+    padding-top: 90%;
         position: relative;
+        align-self: center;
         cursor: pointer;
         @include mq(992px) {
             grid-row: 2 span;
             width: 100%;
-            padding-top: 135%;
+            padding-top: 120%;
         }
-        @include mq(1300px) {
-            // margin-top: -60px;
-        }
+     
         &:after {
             content: "";
             position: absolute;

@@ -78,14 +78,14 @@ code {
 }
 .display-4 {
     // font-size: calc(1.475rem + 2.7vw);
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
     color: color(primary-text);
     margin-bottom: 10px;
 }
 .display-5 {
     // font-size: calc(1.425rem + 2.1vw);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 27.24px;
     color: color(primary-text);
@@ -98,7 +98,7 @@ code {
         font-size: 5rem;
     }
     .display-2 {
-        font-size: 64px;
+        font-size: 50px;
     }
     .display-3 {
         // font-size: 4rem;
@@ -108,12 +108,12 @@ code {
     }
     .display-4 {
         // font-size: 3.5rem;
-        font-size: 36px;
+        font-size: 28px;
         margin-bottom: 20px;
     }
     .display-5 {
         // font-size: 3rem;
-        font-size: 32px;
+        font-size: 25px;
         line-height: 43.58px;
     }
     .display-6 {
@@ -123,18 +123,18 @@ code {
 
 .text {
     &-1 {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 400;
         line-height: 24.51px;
         color: color(primary-text);
         text-align: justify;
         @include mq(786px) {
-            font-size: 23px;
+            font-size: 20px;
             line-height: 30px;
         }
         @include mq(1200px) {
-            font-size: 27px;
-            line-height: 36.77px;
+            font-size: 23px;
+            line-height: 35px;
         }
     }
 }
