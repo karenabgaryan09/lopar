@@ -2222,6 +2222,7 @@ section {
   display: grid;
   grid-auto-rows: 300px;
   gap: 10px;
+  margin-bottom: 30px;
   width: 100%;
   grid-auto-rows: 200px;
 }
