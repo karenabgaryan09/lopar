@@ -1367,11 +1367,11 @@ section {
 }
 .pictures-title {
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 786px) {
   .pictures-title {
-    margin-bottom: 70px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1379,37 +1379,25 @@ section {
     padding: 0;
   }
 }
-.pictures #lopar-pictures {
-  margin-bottom: 40px;
-}
 .pictures #lopar-pictures .swiper {
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.2);
-  max-width: 1000px;
   margin: 0 auto;
+  width: 100%;
   padding-top: 70%;
   cursor: pointer;
-  transition: box-shadow 0.3s ease;
-  position: relative;
 }
-.pictures #lopar-pictures .swiper:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-}
-.pictures #lopar-pictures .swiper:hover:after {
+.pictures #lopar-pictures .swiper:hover .swiper-image:after {
   opacity: 1;
 }
 @media screen and (min-width: 992px) {
   .pictures #lopar-pictures .swiper {
-    padding-top: 44%;
+    width: 70%;
+    padding-top: 55%;
+  }
+}
+@media screen and (min-width: 786px) {
+  .pictures #lopar-pictures .swiper-slide {
+    padding-top: 30px;
+    padding-bottom: 60px;
   }
 }
 .pictures #lopar-pictures .swiper-wrapper {
@@ -1430,37 +1418,64 @@ section {
   }
 }
 .pictures #lopar-pictures .swiper-image {
-  width: 100%;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.2);
   height: 100%;
-  position: absolute;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
   position: relative;
 }
-.pictures #lopar-pictures .swiper-image img {
+.pictures #lopar-pictures .swiper-image:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.pictures #lopar-pictures .swiper-image img {
+  height: 100%;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (min-width: 768px) {
   .pictures #lopar-pictures .swiper-image img {
     border: 6px solid #ffffff;
   }
 }
-.pictures #lopar-pictures .swiper-custom-angle svg path {
-  fill: rgba(251, 251, 251,1);
+.pictures #lopar-pictures .swiper-custom-angle {
+  width: 50px;
+  height: 50px;
 }
-@media screen and (min-width: 1400px) {
-  .pictures #lopar-pictures .swiper-custom-angle svg path {
-    fill: rgba(33, 29, 26,1);
+@media screen and (min-width: 992px) {
+  .pictures #lopar-pictures .swiper-custom-angle {
+    width: 70px;
+    height: 70px;
   }
+  .pictures #lopar-pictures .swiper-custom-angle svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+.pictures #lopar-pictures .swiper-custom-angle svg {
+  width: 20px;
+  filter: drop-shadow(0 -1px 2px rgb(255, 255, 255));
+}
+.pictures #lopar-pictures .swiper-custom-angle svg path {
+  fill: rgba(33, 29, 26,1) !important;
 }
 .pictures #lopar-pictures-thumbnails {
   display: none;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 786px) {
   .pictures #lopar-pictures-thumbnails {
     display: block;
   }
