@@ -13,11 +13,11 @@
         align-items: center;
         gap: 5px;
         text-decoration-line: underline;
-        font-size: 18px;
+        font-size: 16px;
         
         @include mq(768px){
             gap: 10px;
-            font-size: 20px;
+            font-size: 18px;
         }
         &:hover {
             text-decoration-color: inherit;

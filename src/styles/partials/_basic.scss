@@ -74,7 +74,7 @@ code {
     line-height: 32.68px;
     text-transform: none;
     color: color(primary-text);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .display-4 {
     // font-size: calc(1.475rem + 2.7vw);
@@ -102,13 +102,13 @@ code {
     }
     .display-3 {
         // font-size: 4rem;
-        font-size: 40px;
+        font-size: 30px;
         line-height: 54.47px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
     .display-4 {
         // font-size: 3.5rem;
-        font-size: 28px;
+        font-size: 24px;
         margin-bottom: 20px;
     }
     .display-5 {
@@ -129,13 +129,10 @@ code {
         color: color(primary-text);
         text-align: justify;
         @include mq(786px) {
-            font-size: 20px;
+            font-size: 18px;
             line-height: 30px;
         }
-        @include mq(1200px) {
-            font-size: 23px;
-            line-height: 35px;
-        }
+    
     }
 }
 
@@ -180,9 +177,9 @@ img {
     @include mq(1200px) {
         max-width: calc(1140px + 80px * 2); // 60
     }
-    @include mq(1400px) {
-        max-width: calc(1360px + 80px * 2); // 80
-    }
+    // @include mq(1400px) {
+    //     max-width: calc(1360px + 80px * 2); // 80
+    // }
     // @include mq(1920px) {
     //     max-width: mw(xl); //full hd
     // }
@@ -195,7 +192,7 @@ img {
 }
 
 .container-small {
-    max-width: calc(1260px + 80px * 2); // 80
+    max-width: calc(1060px + 80px * 2); // 80
     @include mq(768px) {
         padding-right: 80px;
         padding-left: 80px;

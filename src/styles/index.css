@@ -71,7 +71,7 @@ code {
   line-height: 32.68px;
   text-transform: none;
   color: rgba(27, 75, 85,1);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .display-4 {
@@ -100,12 +100,12 @@ code {
     font-size: 50px;
   }
   .display-3 {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 54.47px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
   .display-4 {
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 20px;
   }
   .display-5 {
@@ -125,14 +125,8 @@ code {
 }
 @media screen and (min-width: 786px) {
   .text-1 {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .text-1 {
-    font-size: 23px;
-    line-height: 35px;
   }
 }
 
@@ -170,14 +164,9 @@ img {
     max-width: 1300px;
   }
 }
-@media screen and (min-width: 1400px) {
-  .container {
-    max-width: 1520px;
-  }
-}
 
 .container-small {
-  max-width: 1420px;
+  max-width: 1220px;
 }
 @media screen and (min-width: 768px) {
   .container-small {
@@ -1301,12 +1290,12 @@ section {
   align-items: center;
   gap: 5px;
   text-decoration-line: underline;
-  font-size: 18px;
+  font-size: 16px;
 }
 @media screen and (min-width: 768px) {
   .link-primary, .link-secondary, .link-success, .link-warning, .link-danger, .link-dark, .link-light {
     gap: 10px;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 .link-primary:hover, .link-secondary:hover, .link-success:hover, .link-warning:hover, .link-danger:hover, .link-dark:hover, .link-light:hover {
@@ -1565,12 +1554,12 @@ section {
     text-align: left;
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: auto 1fr;
-    grid-gap: 30px 60px;
+    grid-gap: 10px 60px;
   }
 }
 @media screen and (min-width: 1300px) {
   .tourist > .container-small {
-    grid-gap: 40px 120px;
+    grid-gap: 10px 120px;
   }
 }
 .tourist-title {
@@ -1800,12 +1789,12 @@ section {
     text-align: left;
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: auto 1fr;
-    grid-gap: 30px 60px;
+    grid-gap: 10px 60px;
   }
 }
 @media screen and (min-width: 1300px) {
   .sports > .container-small {
-    grid-gap: 40px 120px;
+    grid-gap: 10px 120px;
   }
 }
 .sports-title {
@@ -1939,12 +1928,12 @@ section {
     text-align: left;
     grid-template-columns: 1fr 1.5fr;
     grid-template-rows: auto 1fr;
-    grid-gap: 30px 60px;
+    grid-gap: 10px 60px;
   }
 }
 @media screen and (min-width: 1300px) {
   .history > .container-small {
-    grid-gap: 40px 120px;
+    grid-gap: 10px 120px;
   }
 }
 .history-title {
@@ -2085,12 +2074,12 @@ section {
     text-align: left;
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: auto 1fr;
-    grid-gap: 30px 60px;
+    grid-gap: 10px 60px;
   }
 }
 @media screen and (min-width: 1300px) {
   .places > .container-small {
-    grid-gap: 40px 120px;
+    grid-gap: 10px 120px;
   }
 }
 .places-title {
@@ -2242,7 +2231,7 @@ section {
   gap: 10px;
   margin-bottom: 30px;
   width: 100%;
-  grid-auto-rows: 200px;
+  grid-auto-rows: 140px;
 }
 @media screen and (min-width: 420px) {
   .accommodation-page .accommodation-article .gallery {
@@ -2256,22 +2245,22 @@ section {
 }
 @media screen and (min-width: 992px) {
   .accommodation-page .accommodation-article .gallery {
-    grid-auto-rows: 200px;
+    grid-auto-rows: 160px;
   }
 }
 @media screen and (min-width: 1100px) {
   .accommodation-page .accommodation-article .gallery {
-    grid-auto-rows: 250px;
+    grid-auto-rows: 180px;
   }
 }
 @media screen and (min-width: 1200px) {
   .accommodation-page .accommodation-article .gallery {
-    grid-auto-rows: 250px;
+    grid-auto-rows: 200px;
   }
 }
 @media screen and (min-width: 1400px) {
   .accommodation-page .accommodation-article .gallery {
-    grid-auto-rows: 270px;
+    grid-auto-rows: 230px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -2486,7 +2475,7 @@ section {
 }
 @media screen and (min-width: 992px) {
   .apartment-card {
-    grid-template-columns: 336px 1fr;
+    grid-template-columns: 270px 1fr;
     align-items: end;
     padding: 30px;
   }
@@ -2605,14 +2594,14 @@ section {
   gap: 15px;
 }
 .apartment-card .item:not(:last-of-type) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .apartment-card .item-title {
-  font-size: 18px;
+  font-size: 16px;
 }
 @media screen and (min-width: 1200px) {
   .apartment-card .item-title {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 .apartment-card .item-text {

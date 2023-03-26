@@ -37,7 +37,7 @@
             gap: 10px;
             margin-bottom: 30px;
             width: 100%;
-            grid-auto-rows: 200px;
+            grid-auto-rows: 140px;
             @include mq(420px) {
                 grid-template-columns: repeat(12, 1fr);
             }
@@ -45,16 +45,16 @@
                 grid-auto-rows: 150px;
             }
             @include mq(992px) {
-                grid-auto-rows: 200px;
+                grid-auto-rows: 160px;
             }
             @include mq(1100px) {
-                grid-auto-rows: 250px;
+                grid-auto-rows: 180px;
             }
             @include mq(1200px) {
-                grid-auto-rows: 250px;
+                grid-auto-rows: 200px;
             }
             @include mq(1400px) {
-                grid-auto-rows: 270px;
+                grid-auto-rows: 230px;
             }
             @include mq(992px) {
                 position: relative;

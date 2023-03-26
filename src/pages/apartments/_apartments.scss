@@ -155,7 +155,7 @@
     background-color: color(light);
 
     @include mq(992px) {
-        grid-template-columns: 336px 1fr;
+        grid-template-columns: 270px 1fr;
         align-items: end;
         padding: 30px;
     }
@@ -270,12 +270,12 @@
         align-items: center;
         gap: 15px;
         &:not(:last-of-type) {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         &-title {
-            font-size: 18px;
+            font-size: 16px;
             @include mq(1200px) {
-                font-size: 20px;
+                font-size: 18px;
             }
         }
         &-text {
