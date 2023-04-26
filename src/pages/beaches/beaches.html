@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Beaches</title>
+        <link rel="icon" href="/src/assets/images/favicon.png" />
+        <meta name="keywords" content="website, template, sample" />
+        <meta name="description" content="this sample created for prototyping purposes" />
+        <meta name="author" content="Fiverr: karen_werner | LinkedIn https://www.linkedin.com/in/karenabgaryan09/" />
+        <!-- OPEN GRAPH -->
+        <meta property="og:title" content="Beaches" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="this sample created for prototyping purposes" />
+        <meta property="og:image" content="/src/assets/images/og.png" />
+        <meta property="og:url" content="https://sample.com" />
+        <!-- TWITTER CARDS -->
+        <meta name="twitter:title" content="Beaches" />
+        <meta name="twitter:description" content="this sample created for prototyping purposes" />
+        <meta name="twitter:image" content="/src/assets/images/og.png" />
+        <meta name="twitter:url" content="https://sample.com" />
+        <meta name="twitter:card" content="summary" />
+        <!-- STYLESHEET -->
+        <link rel="stylesheet" href="/src/styles/index.css" />
+        <!-- SCRIPTS -->
+        <script src="/src/scripts/load-cover.js" defer></script>
+        <script src="/src/scripts/script.js" defer></script>
+        <script src="/src/components/button/button.js" defer></script>
+        <script src="/src/components/navbar/navbar.js" defer></script>
+        <script src="/src/components/select/select.js" defer></script>
+        <script src="/src/components/drawer/drawer.js" defer></script>
+        <script src="/src/components/modal/modal.js" defer></script>
+        <!-- SWIPER -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+        <script src="/src/components/swiper/swiper.js" defer></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button
+                    class="navbar-toggler altCollapsed btn btn-circle-light"
+                    type="button"
+                    data-target="#navbar-drawer"
+                    data-toggle="drawer"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
+                        />
+                    </svg>
+                </button>
+                <a class="navbar-brand" href="/index.html">Lopar260</a>
+
+                <div class="drawer drawer-left" id="navbar-drawer">
+                    <button class="drawer-close btn btn-circle-dark" data-dismiss="drawer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path
+                                d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"
+                            />
+                        </svg>
+                    </button>
+                    <a class="nav-link" href="/index.html">lopar</a>
+                    <a class="nav-link" data-text="accommodation" href="/src/pages/accommodation/accommodation.html"
+                        >accommodation</a
+                    >
+                    <a class="nav-link active" href="/src/pages/beaches/beaches.html">beaches</a>
+                    <a class="nav-link" href="#/">find us</a>
+                    <a class="nav-link" href="#/">contact us</a>
+                </div>
+                <div class="navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">lopar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                data-text="accommodation"
+                                href="/src/pages/accommodation/accommodation.html"
+                                >accommodation</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/src/pages/beaches/beaches.html">beaches</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#/">find us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#/">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-item select">
+                    <div class="select-toggle nav-link btn btn-text-primary" data-toggle="select" data-outside="true">
+                        <span class="select-name">ENG</span>
+                        <span class="endIcon select-toggle-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path
+                                    d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"
+                                />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="select-menu">
+                        <a class="select-item">EST</a>
+                        <a class="select-item">RUS</a>
+                        <a class="select-item">FIN</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <header
+            class="hero"
+            data-cover-src="/src/assets/images/background.jpg"
+            style="background-image: url('/src/assets/images/background-thumbnail.jpg')"
+        ></header>
+
+        <main class="beaches-page">
+            <section class="showcase">
+                <div class="container-small">
+                    <h3 class="display-3 showcase-title">Sandy beaches in Lopar on island Rab, Croatia</h3>
+                    <p class="showcase-description text-1">
+                        Do you want to know where all the sandy beaches in Lopar are located? Check out our map!
+                    </p>
+
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d64028.957055747924!2d14.712212319761479!3d44.827536323151925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbeaches%20in%20Lopar!5e0!3m2!1sen!2sam!4v1682431069670!5m2!1sen!2sam"
+                            width="600"
+                            height="450"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+
+                    <p class="showcase-description text-1">
+                        Lopar with its 22 sandy beaches deserves the title “Sandy Heaven”. These benefits were noticed
+                        by tourists 120 years ago. Today, Lopar has some of the best sandy beaches in Croatia, which are
+                        also well known worldwide. Among the top 5 beaches in Lopar are the ones that attract the
+                        largest number of tourists, each of those beaches is special and beautiful in its own way. The
+                        biggest and most famous sandy beach in Lopar is 1.5 kilometers long Paradise Beach along which
+                        there are the most important tourist facilities. This is also the biggest and the most famous
+                        sandy beach on island Rab, and since 2003 it has the blue flag which is the symbol of quality
+                        and preserved environment. Paradise Beach is repeatedly awarded as the best arranged public
+                        beach with diverse tourist facilities and daily animation for tourists and visitors. In close
+                        proximity of the Paradise Beach, a very attractive beach called Livacina is found. The beach has
+                        facilities which include several buffets and bars that are situated in the shade of pine trees.
+                    </p>
+                </div>
+            </section>
+
+            <section class="beaches-gallery beaches-gallery-1">
+                <div class="container-small">
+                    <div class="beach-card-group">
+                        <div class="card beach-card">
+                            <div class="card-inner">
+                                <h4 class="display-4 card-title">Paradise beach</h4>
+                                <div class="card-image" data-toggle="modal" data-target="#beaches-modal">
+                                    <img src="/src/assets/images/beaches/paradise-beach/thumbnails/image-1.jpg" alt="" />
+                                </div>
+                                <a class="info-link link-light card-link" underline="hover" href="https://goo.gl/maps/ueqLe2ya4xXLvHkV8" target="_blank">
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M11.9999 13.4299C13.723 13.4299 15.1199 12.0331 15.1199 10.3099C15.1199 8.58681 13.723 7.18994 11.9999 7.18994C10.2768 7.18994 8.87988 8.58681 8.87988 10.3099C8.87988 12.0331 10.2768 13.4299 11.9999 13.4299Z"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                        />
+                                        <path
+                                            d="M3.6202 8.49C5.5902 -0.169998 18.4202 -0.159997 20.3802 8.5C21.5302 13.58 18.3702 17.88 15.6002 20.54C13.5902 22.48 10.4102 22.48 8.3902 20.54C5.6302 17.88 2.4702 13.57 3.6202 8.49Z"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                        />
+                                    </svg>
+                                    Google Map</a
+                                >
+                            </div>
+                        </div>
+                        <div class="card beach-card">
+                            <div class="card-inner">
+                                <h4 class="display-4 card-title">livacina</h4>
+                                <div class="card-image" data-toggle="modal" data-target="#beaches-modal">
+                                    <img src="/src/assets/images/beaches/livacina/thumbnails/image-1.jpg" alt="" />
+                                </div>
+                                <a class="info-link link-light card-link" underline="hover" href="https://goo.gl/maps/ueqLe2ya4xXLvHkV8" target="_blank">
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M11.9999 13.4299C13.723 13.4299 15.1199 12.0331 15.1199 10.3099C15.1199 8.58681 13.723 7.18994 11.9999 7.18994C10.2768 7.18994 8.87988 8.58681 8.87988 10.3099C8.87988 12.0331 10.2768 13.4299 11.9999 13.4299Z"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                        />
+                                        <path
+                                            d="M3.6202 8.49C5.5902 -0.169998 18.4202 -0.159997 20.3802 8.5C21.5302 13.58 18.3702 17.88 15.6002 20.54C13.5902 22.48 10.4102 22.48 8.3902 20.54C5.6302 17.88 2.4702 13.57 3.6202 8.49Z"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                        />
+                                    </svg>
+                                    Google Map</a
+                                >
+                            </div>
+                        </div>
+                        <div class="card beach-card">
+                            <div class="card-inner">
+                                <h4 class="display-4 card-title">mel</h4>
+                                <div class="card-image" data-toggle="modal" data-target="#beaches-modal">
+                                    <img src="/src/assets/images/beaches/mel/thumbnails/image-1.jpg" alt="" />
+                                </div>
+                                <a class="info-link link-light card-link" underline="hover" href="https://goo.gl/maps/ueqLe2ya4xXLvHkV8" target="_blank">
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M11.9999 13.4299C13.723 13.4299 15.1199 12.0331 15.1199 10.3099C15.1199 8.58681 13.723 7.18994 11.9999 7.18994C10.2768 7.18994 8.87988 8.58681 8.87988 10.3099C8.87988 12.0331 10.2768 13.4299 11.9999 13.4299Z"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                        />
+                                        <path
+                                            d="M3.6202 8.49C5.5902 -0.169998 18.4202 -0.159997 20.3802 8.5C21.5302 13.58 18.3702 17.88 15.6002 20.54C13.5902 22.48 10.4102 22.48 8.3902 20.54C5.6302 17.88 2.4702 13.57 3.6202 8.49Z"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                        />
+                                    </svg>
+                                    Google Map</a
+                                >
+                            </div>
+                        </div>
+                        <div class="card beach-card">
+                            <div class="card-inner">
+                                <h4 class="display-4 card-title">Siće</h4>
+                                <div class="card-image" data-toggle="modal" data-target="#beaches-modal">
+                                    <img src="/src/assets/images/beaches/sice/thumbnails/image-1.jpg" alt="" />
+                                </div>
+                                <a class="info-link link-light card-link" underline="hover" href="https://goo.gl/maps/ueqLe2ya4xXLvHkV8" target="_blank">
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M11.9999 13.4299C13.723 13.4299 15.1199 12.0331 15.1199 10.3099C15.1199 8.58681 13.723 7.18994 11.9999 7.18994C10.2768 7.18994 8.87988 8.58681 8.87988 10.3099C8.87988 12.0331 10.2768 13.4299 11.9999 13.4299Z"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                        />
+                                        <path
+                                            d="M3.6202 8.49C5.5902 -0.169998 18.4202 -0.159997 20.3802 8.5C21.5302 13.58 18.3702 17.88 15.6002 20.54C13.5902 22.48 10.4102 22.48 8.3902 20.54C5.6302 17.88 2.4702 13.57 3.6202 8.49Z"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                        />
+                                    </svg>
+                                    Google Map</a
+                                >
+                            </div>
+                        </div>
+                        <div class="card beach-card">
+                            <div class="card-inner">
+                                <h4 class="display-4 card-title">vila mira</h4>
+                                <div class="card-image" data-toggle="modal" data-target="#beaches-modal">
+                                    <img src="/src/assets/images/beaches/vila-mira/thumbnails/image-1.jpg" alt="" />
+                                </div>
+                                <a class="info-link link-light card-link" underline="hover" href="https://goo.gl/maps/ueqLe2ya4xXLvHkV8" target="_blank">
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M11.9999 13.4299C13.723 13.4299 15.1199 12.0331 15.1199 10.3099C15.1199 8.58681 13.723 7.18994 11.9999 7.18994C10.2768 7.18994 8.87988 8.58681 8.87988 10.3099C8.87988 12.0331 10.2768 13.4299 11.9999 13.4299Z"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                        />
+                                        <path
+                                            d="M3.6202 8.49C5.5902 -0.169998 18.4202 -0.159997 20.3802 8.5C21.5302 13.58 18.3702 17.88 15.6002 20.54C13.5902 22.48 10.4102 22.48 8.3902 20.54C5.6302 17.88 2.4702 13.57 3.6202 8.49Z"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                        />
+                                    </svg>
+                                    Google Map</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="beaches-article">
+                <div class="container-small">
+                    <h3 class="display-3 article-title">FKK - Nudist beaches in Lopar</h3>
+                    <p class="article-description text-1">
+                        Two of the most famous nudist beaches in Lopar are FKK Ciganka and FKK Sahara where visitors can
+                        enjoy unique views and landscapes. All nudist beaches in Lopar are hidden in nature, without any
+                        touristic facilities and they can be reached only by foot or by boat. Since the beaches are wild
+                        and untouched, they sometimes have very interesting and unusual natural sandy forms. Also, one
+                        of the more famous nudist beaches in Lopar is FKK Stolac which offers a series of hidden sandy
+                        and rocky places for all the visitors and also a small island which can be reached by walking
+                        through the shallow sea.
+                    </p>
+                </div>
+            </section>
+
+            <section class="beaches-gallery beaches-gallery-2">
+                <div class="container-small">
+                    <div class="beach-card-group">
+                        <div class="card beach-card second-hover">
+                            <div class="card-inner">
+                                <h4 class="display-4 card-title">FKK Sahara</h4>
+                                <div class="card-image" data-toggle="modal" data-target="#beaches-modal">
+                                    <img src="/src/assets/images/beaches/FKK/sahara/thumbnails/image-1.jpg" alt="" />
+                                </div>
+                                <a class="info-link link-light card-link" underline="hover" href="https://goo.gl/maps/ueqLe2ya4xXLvHkV8" target="_blank">
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M11.9999 13.4299C13.723 13.4299 15.1199 12.0331 15.1199 10.3099C15.1199 8.58681 13.723 7.18994 11.9999 7.18994C10.2768 7.18994 8.87988 8.58681 8.87988 10.3099C8.87988 12.0331 10.2768 13.4299 11.9999 13.4299Z"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                        />
+                                        <path
+                                            d="M3.6202 8.49C5.5902 -0.169998 18.4202 -0.159997 20.3802 8.5C21.5302 13.58 18.3702 17.88 15.6002 20.54C13.5902 22.48 10.4102 22.48 8.3902 20.54C5.6302 17.88 2.4702 13.57 3.6202 8.49Z"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                        />
+                                    </svg>
+                                    Google Map</a
+                                >
+                            </div>
+                        </div>
+                        <div class="card beach-card second-hover">
+                            <div class="card-inner">
+                                <h4 class="display-4 card-title">FKK Ciganka</h4>
+                                <div class="card-image" data-toggle="modal" data-target="#beaches-modal">
+                                    <img src="/src/assets/images/beaches/FKK/ciganka/thumbnails/image-1.jpg" alt="" />
+                                </div>
+                                <a class="info-link link-light card-link" underline="hover" href="https://goo.gl/maps/ueqLe2ya4xXLvHkV8" target="_blank">
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M11.9999 13.4299C13.723 13.4299 15.1199 12.0331 15.1199 10.3099C15.1199 8.58681 13.723 7.18994 11.9999 7.18994C10.2768 7.18994 8.87988 8.58681 8.87988 10.3099C8.87988 12.0331 10.2768 13.4299 11.9999 13.4299Z"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                        />
+                                        <path
+                                            d="M3.6202 8.49C5.5902 -0.169998 18.4202 -0.159997 20.3802 8.5C21.5302 13.58 18.3702 17.88 15.6002 20.54C13.5902 22.48 10.4102 22.48 8.3902 20.54C5.6302 17.88 2.4702 13.57 3.6202 8.49Z"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                        />
+                                    </svg>
+                                    Google Map</a
+                                >
+                            </div>
+                        </div>
+                        <div class="card beach-card second-hover">
+                            <div class="card-inner">
+                                <h4 class="display-4 card-title">FKK Stolac</h4>
+                                <div class="card-image" data-toggle="modal" data-target="#beaches-modal">
+                                    <img src="/src/assets/images/beaches/FKK/stolac/thumbnails/image-1.jpg" alt="" />
+                                </div>
+                                <a class="info-link link-light card-link" underline="hover" href="https://goo.gl/maps/ueqLe2ya4xXLvHkV8" target="_blank">
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M11.9999 13.4299C13.723 13.4299 15.1199 12.0331 15.1199 10.3099C15.1199 8.58681 13.723 7.18994 11.9999 7.18994C10.2768 7.18994 8.87988 8.58681 8.87988 10.3099C8.87988 12.0331 10.2768 13.4299 11.9999 13.4299Z"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                        />
+                                        <path
+                                            d="M3.6202 8.49C5.5902 -0.169998 18.4202 -0.159997 20.3802 8.5C21.5302 13.58 18.3702 17.88 15.6002 20.54C13.5902 22.48 10.4102 22.48 8.3902 20.54C5.6302 17.88 2.4702 13.57 3.6202 8.49Z"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                        />
+                                    </svg>
+                                    Google Map</a
+                                >
+                            </div>
+                        </div>
+                        <div class="card beach-card second-hover">
+                            <div class="card-inner">
+                                <h4 class="display-4 card-title">FKK Sturic</h4>
+                                <div class="card-image" data-toggle="modal" data-target="#beaches-modal">
+                                    <img src="/src/assets/images/beaches/FKK/sturic/thumbnails/image-1.jpg" alt="" />
+                                </div>
+                                <a class="info-link link-light card-link" underline="hover" href="https://goo.gl/maps/ueqLe2ya4xXLvHkV8" target="_blank">
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M11.9999 13.4299C13.723 13.4299 15.1199 12.0331 15.1199 10.3099C15.1199 8.58681 13.723 7.18994 11.9999 7.18994C10.2768 7.18994 8.87988 8.58681 8.87988 10.3099C8.87988 12.0331 10.2768 13.4299 11.9999 13.4299Z"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                        />
+                                        <path
+                                            d="M3.6202 8.49C5.5902 -0.169998 18.4202 -0.159997 20.3802 8.5C21.5302 13.58 18.3702 17.88 15.6002 20.54C13.5902 22.48 10.4102 22.48 8.3902 20.54C5.6302 17.88 2.4702 13.57 3.6202 8.49Z"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                        />
+                                    </svg>
+                                    Google Map</a
+                                >
+                            </div>
+                        </div>
+                     
+                    </div>
+
+                </div>
+            </section>
+
+
+
+            
+            <div class="modal fade" style="display: none" id="beaches-modal" tabindex="-1">
+                <button type="button" class="btn-lg btn-close btn btn-circle-light" data-dismiss="modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <path
+                            d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+                        />
+                    </svg>
+                </button>
+                <div class="wrapper">
+                    <div class="gallery">
+                        <img src="/src/assets/images/lopar-pictures/covers/image-1.jpg" alt="" />
+                        <img src="/src/assets/images/lopar-pictures/covers/image-2.jpg" alt="" />
+                        <img src="/src/assets/images/lopar-pictures/covers/image-3.jpg" alt="" />
+                        <img src="/src/assets/images/lopar-pictures/covers/image-4.jpg" alt="" />
+                        <img src="/src/assets/images/lopar-pictures/covers/image-5.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer bg-dark">
+            <div class="container">
+                <div class="info">
+                    <h2 class="display-2 footer-brand">Lopar260</h2>
+                    <div class="info-list">
+                        <a class="info-link link-light" underline="none">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M11.9999 13.4299C13.723 13.4299 15.1199 12.0331 15.1199 10.3099C15.1199 8.58681 13.723 7.18994 11.9999 7.18994C10.2768 7.18994 8.87988 8.58681 8.87988 10.3099C8.87988 12.0331 10.2768 13.4299 11.9999 13.4299Z"
+                                    stroke="white"
+                                    stroke-width="1.5"
+                                />
+                                <path
+                                    d="M3.6202 8.49C5.5902 -0.169998 18.4202 -0.159997 20.3802 8.5C21.5302 13.58 18.3702 17.88 15.6002 20.54C13.5902 22.48 10.4102 22.48 8.3902 20.54C5.6302 17.88 2.4702 13.57 3.6202 8.49Z"
+                                    stroke="white"
+                                    stroke-width="1.5"
+                                />
+                            </svg>
+                            Lopar 260, 51281, Lopar, Croatia</a
+                        >
+                        <a class="info-link link-light" underline="none">
+                            <svg
+                                width="22"
+                                height="22"
+                                viewBox="0 0 22 22"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M20.97 17.33C20.97 17.69 20.89 18.06 20.72 18.42C20.55 18.78 20.33 19.12 20.04 19.44C19.55 19.98 19.01 20.37 18.4 20.62C17.8 20.87 17.15 21 16.45 21C15.43 21 14.34 20.76 13.19 20.27C12.04 19.78 10.89 19.12 9.75 18.29C8.6 17.45 7.51 16.52 6.47 15.49C5.44 14.45 4.51 13.36 3.68 12.22C2.86 11.08 2.2 9.94 1.72 8.81C1.24 7.67 1 6.58 1 5.54C1 4.86 1.12 4.21 1.36 3.61C1.6 3 1.98 2.44 2.51 1.94C3.15 1.31 3.85 1 4.59 1C4.87 1 5.15 1.06 5.4 1.18C5.66 1.3 5.89 1.48 6.07 1.74L8.39 5.01C8.57 5.26 8.7 5.49 8.79 5.71C8.88 5.92 8.93 6.13 8.93 6.32C8.93 6.56 8.86 6.8 8.72 7.03C8.59 7.26 8.4 7.5 8.16 7.74L7.4 8.53C7.29 8.64 7.24 8.77 7.24 8.93C7.24 9.01 7.25 9.08 7.27 9.16C7.3 9.24 7.33 9.3 7.35 9.36C7.53 9.69 7.84 10.12 8.28 10.64C8.73 11.16 9.21 11.69 9.73 12.22C10.27 12.75 10.79 13.24 11.32 13.69C11.84 14.13 12.27 14.43 12.61 14.61C12.66 14.63 12.72 14.66 12.79 14.69C12.87 14.72 12.95 14.73 13.04 14.73C13.21 14.73 13.34 14.67 13.45 14.56L14.21 13.81C14.46 13.56 14.7 13.37 14.93 13.25C15.16 13.11 15.39 13.04 15.64 13.04C15.83 13.04 16.03 13.08 16.25 13.17C16.47 13.26 16.7 13.39 16.95 13.56L20.26 15.91C20.52 16.09 20.7 16.3 20.81 16.55C20.91 16.8 20.97 17.05 20.97 17.33Z"
+                                    stroke="#FBFBFB"
+                                    stroke-width="1.5"
+                                    stroke-miterlimit="10"
+                                />
+                            </svg>
+                            +385 51 775 629</a
+                        >
+                        <a class="info-link link-light" underline="none">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z"
+                                    stroke="#FBFBFB"
+                                    stroke-width="1.5"
+                                    stroke-miterlimit="10"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9"
+                                    stroke="#FBFBFB"
+                                    stroke-width="1.5"
+                                    stroke-miterlimit="10"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                            lopar260@gmail.com</a
+                        >
+                    </div>
+                </div>
+
+                <div class="details">
+                    <a href="/src/pages/apartments/apartments.html" class="card detail-card btn btn-text-primary">
+                        <img src="/src/assets/images/apartments/covers/image-3.jpg" alt="" class="card-image" />
+                        <h4 class="card-title">Apartments in Lopar</h4>
+                    </a>
+                    <a href="/src/pages/apartments/rooms.html" class="card detail-card btn btn-text-primary">
+                        <img src="/src/assets/images/rooms/covers/image-3.jpg" alt="" class="card-image" />
+                        <h4 class="card-title">Rooms in Lopar</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">@Lopar260 | All Rights Reserved</div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -158,14 +158,15 @@
             transition: transform 0.3s ease;
         }
     }
-    .accordion {
-        &-body {
-            padding: 0;
-        }
-        &-item {
-            border-radius: 0 !important;
-        }
-    }
+    // .accordion {
+    //     &-body {
+    //         padding: 0;
+    //     }
+    //     &-item {
+    //         border-radius: 0 !important;
+    //     }
+      
+    // }
     .drawer {
         padding: 0;
         &-close {
@@ -178,6 +179,10 @@
             display: block;
             &:hover {
                 background-color: rgba(0, 0, 0, 0.05);
+            }
+            &.active {
+                    font-weight: bold;
+                    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
             }
         }
         &-close {

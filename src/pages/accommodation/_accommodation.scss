@@ -1,12 +1,7 @@
 .accommodation-page {
     .showcase {
         &-title {
-            text-align: center;
             margin-bottom: 30px;
-            @include mq(768px) {
-                display: none;
-                // margin-bottom: 60px;
-            }
         }
         &-description {
             margin-bottom: 60px;
