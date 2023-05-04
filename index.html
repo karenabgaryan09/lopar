@@ -31,10 +31,11 @@
         <script src="/src/components/select/select.js" defer></script>
         <script src="/src/components/drawer/drawer.js" defer></script>
         <script src="/src/components/modal/modal.js" defer></script>
+        <script src="/src/scripts/lock.js"></script>
         <!-- SWIPER -->
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
-        <script src="/src/components/swiper/swiper.js" defer></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="/src/components/swiper/lightbox/lightbox.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg">
@@ -62,18 +63,18 @@
                             />
                         </svg>
                     </button>
-                    <a class="nav-link active"  href="/index.html">lopar</a>
+                    <a class="nav-link active" href="/index.html">lopar</a>
                     <a class="nav-link" data-text="accommodation" href="/src/pages/accommodation/accommodation.html"
                         >accommodation</a
                     >
-                    <a class="nav-link"  href="/src/pages/beaches/beaches.html">beaches</a>
-                    <a class="nav-link"  href="#/">find us</a>
-                    <a class="nav-link"  href="#/">contact us</a>
+                    <a class="nav-link" href="/src/pages/beaches/beaches.html">beaches</a>
+                    <a class="nav-link" href="#/">find us</a>
+                    <a class="nav-link" href="#/">contact us</a>
                 </div>
                 <div class="navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active"  href="/index.html">lopar</a>
+                            <a class="nav-link active" href="/index.html">lopar</a>
                         </li>
                         <li class="nav-item">
                             <a
@@ -84,13 +85,13 @@
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"  href="/src/pages/beaches/beaches.html">beaches</a>
+                            <a class="nav-link" href="/src/pages/beaches/beaches.html">beaches</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"  href="#/">find us</a>
+                            <a class="nav-link" href="#/">find us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"  href="#/">contact us</a>
+                            <a class="nav-link" href="#/">contact us</a>
                         </li>
                     </ul>
                 </div>
@@ -122,427 +123,531 @@
 
         <main class="home-page">
             <section class="pictures">
-                <div class="container-small">
-                    <h2 class="pictures-title display-2">Pictures of Lopar</h2>
-                    <div class="swiper-custom-wrapper" id="lopar-pictures">
-                        <div class="swiper" data-toggle="modal" data-target="#loparPicturesModal">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-                                <!-- Slides -->
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
-                                        <img
-                                            src="/src/assets/images/lopar-pictures/covers/image-1.jpg"
-                                            class="card-img"
-                                            alt="image"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
-                                        <img
-                                            src="/src/assets/images/lopar-pictures/covers/image-2.jpg"
-                                            class="card-img"
-                                            alt="image"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
-                                        <img
-                                            src="/src/assets/images/lopar-pictures/covers/image-3.jpg"
-                                            class="card-img"
-                                            alt="image"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
-                                        <img
-                                            src="/src/assets/images/lopar-pictures/covers/image-4.jpg"
-                                            class="card-img"
-                                            alt="image"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
-                                        <img
-                                            src="/src/assets/images/lopar-pictures/covers/image-5.jpg"
-                                            class="card-img"
-                                            alt="image"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
-                                        <img
-                                            src="/src/assets/images/lopar-pictures/covers/image-6.jpg"
-                                            class="card-img"
-                                            alt="image"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
-                                        <img
-                                            src="/src/assets/images/lopar-pictures/covers/image-7.jpg"
-                                            class="card-img"
-                                            alt="image"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
-                                        <img
-                                            src="/src/assets/images/lopar-pictures/covers/image-8.jpg"
-                                            class="card-img"
-                                            alt="image"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
-                                        <img
-                                            src="/src/assets/images/lopar-pictures/covers/image-9.jpg"
-                                            class="card-img"
-                                            alt="image"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
-                                        <img
-                                            src="/src/assets/images/lopar-pictures/covers/image-10.jpg"
-                                            class="card-img"
-                                            alt="image"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
-                                        <img
-                                            src="/src/assets/images/lopar-pictures/covers/image-11.jpg"
-                                            class="card-img"
-                                            alt="image"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- If we need pagination -->
-                            <!-- <div class="swiper-pagination"></div> -->
-
-                            <!-- If we need navigation buttons -->
-
-                            <!-- If we need scrollbar -->
-                            <!-- <div class="swiper-scrollbar"></div> -->
-                        </div>
-
-                        <div class="swiper-custom-center">
-                            <span class="swiper-custom-angle prev btn btn-circle-dark btn-xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
-                                    <path
-                                        d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"
-                                    />
-                                </svg>
-                            </span>
-                            <span class="swiper-custom-angle next btn btn-circle-dark btn-xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
-                                    <path
-                                        d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"
-                                    />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="container">
-                    <div class="swiper-custom-wrapper" id="lopar-pictures-thumbnails">
-                        <div class="swiper">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-                                <!-- Slides -->
-                                <div class="swiper-slide">
-                                    <div class="swiper-image active">
+                    <h2 class="pictures-title display-2">Pictures of Lopar</h2>
+                    <div class="thumbnail-carousel">
+                        <!-- FIRST CAROUSEL -->
+                        <div
+                            class="carousel"
+                            id="carousel-example-in-thumbnail-carousel"
+                            data-instance-name="carouselExampleInThumbnailCarousel"
+                        >
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
                                         <img
-                                            src="/src/assets/images/lopar-pictures/thumbnails/image-1.jpg"
-                                            class="card-img"
-                                            alt="image"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
-                                        <img
-                                            src="/src/assets/images/lopar-pictures/thumbnails/image-2.jpg"
-                                            class="card-img"
-                                            alt="image"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
-                                        <img
-                                            src="/src/assets/images/lopar-pictures/thumbnails/image-3.jpg"
-                                            class="card-img"
-                                            alt="image"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
-                                        <img
-                                            src="/src/assets/images/lopar-pictures/thumbnails/image-4.jpg"
-                                            class="card-img"
-                                            alt="image"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
-                                        <img
-                                            src="/src/assets/images/lopar-pictures/thumbnails/image-5.jpg"
-                                            class="card-img"
-                                            alt="image"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
-                                        <img
-                                            src="/src/assets/images/lopar-pictures/thumbnails/image-6.jpg"
-                                            class="card-img"
-                                            alt="image"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
-                                        <img
-                                            src="/src/assets/images/lopar-pictures/thumbnails/image-7.jpg"
-                                            class="card-img"
-                                            alt="image"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
-                                        <img
-                                            src="/src/assets/images/lopar-pictures/thumbnails/image-8.jpg"
-                                            class="card-img"
-                                            alt="image"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
-                                        <img
-                                            src="/src/assets/images/lopar-pictures/thumbnails/image-9.jpg"
-                                            class="card-img"
-                                            alt="image"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
-                                        <img
-                                            src="/src/assets/images/lopar-pictures/thumbnails/image-10.jpg"
-                                            class="card-img"
-                                            alt="image"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
-                                        <img
-                                            src="/src/assets/images/lopar-pictures/thumbnails/image-11.jpg"
-                                            class="card-img"
-                                            alt="image"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- If we need pagination -->
-                            <!-- <div class="swiper-pagination"></div> -->
-
-                            <!-- If we need navigation buttons -->
-
-                            <!-- If we need scrollbar -->
-                            <!-- <div class="swiper-scrollbar"></div> -->
-                        </div>
-
-                        <!-- <div class="swiper-custom-center">
-                            <span class="swiper-custom-angle prev btn btn-circle-dark btn-xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
-                                    <path
-                                        d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"
-                                    />
-                                </svg>
-                            </span>
-                            <span class="swiper-custom-angle next btn btn-circle-dark btn-xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
-                                    <path
-                                        d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"
-                                    />
-                                </svg>
-                            </span>
-                        </div> -->
-                    </div>
-                </div>
-
-                <div class="modal fade" style="display: none" id="loparPicturesModal" tabindex="-1">
-                    <button type="button" class="btn-close btn-lg btn btn-circle-light" data-dismiss="modal">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                            <path
-                                d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
-                            />
-                        </svg>
-                    </button>
-                    <div class="swiper-custom-wrapper" id="lopar-pictures-lightbox">
-                        <div class="swiper">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-                                <!-- Slides -->
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
-                                        <img
+                                            data-index="0"
+                                            data-toggle="thumbnail-carousel"
+                                            data-target="#carousel-example-in-thumbnail-carousel-backdrop"
                                             src="/src/assets/images/lopar-pictures/covers/image-1.jpg"
-                                            class="card-img"
-                                            alt="image"
+                                            alt=""
                                         />
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
+                                    <div class="swiper-slide">
                                         <img
+                                            data-index="1"
+                                            data-toggle="thumbnail-carousel"
+                                            data-target="#carousel-example-in-thumbnail-carousel-backdrop"
                                             src="/src/assets/images/lopar-pictures/covers/image-2.jpg"
-                                            class="card-img"
-                                            alt="image"
+                                            alt=""
                                         />
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
+                                    <div class="swiper-slide">
                                         <img
+                                            data-index="2"
+                                            data-toggle="thumbnail-carousel"
+                                            data-target="#carousel-example-in-thumbnail-carousel-backdrop"
                                             src="/src/assets/images/lopar-pictures/covers/image-3.jpg"
-                                            class="card-img"
-                                            alt="image"
+                                            alt=""
                                         />
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
+                                    <div class="swiper-slide">
                                         <img
+                                            data-index="3"
+                                            data-toggle="thumbnail-carousel"
+                                            data-target="#carousel-example-in-thumbnail-carousel-backdrop"
                                             src="/src/assets/images/lopar-pictures/covers/image-4.jpg"
-                                            class="card-img"
-                                            alt="image"
+                                            alt=""
                                         />
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
+                                    <div class="swiper-slide">
                                         <img
+                                            data-index="4"
+                                            data-toggle="thumbnail-carousel"
+                                            data-target="#carousel-example-in-thumbnail-carousel-backdrop"
                                             src="/src/assets/images/lopar-pictures/covers/image-5.jpg"
-                                            class="card-img"
-                                            alt="image"
+                                            alt=""
                                         />
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
+                                    <div class="swiper-slide">
                                         <img
+                                            data-index="5"
+                                            data-toggle="thumbnail-carousel"
+                                            data-target="#carousel-example-in-thumbnail-carousel-backdrop"
                                             src="/src/assets/images/lopar-pictures/covers/image-6.jpg"
-                                            class="card-img"
-                                            alt="image"
+                                            alt=""
                                         />
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
+                                    <div class="swiper-slide">
                                         <img
+                                            data-index="6"
+                                            data-toggle="thumbnail-carousel"
+                                            data-target="#carousel-example-in-thumbnail-carousel-backdrop"
                                             src="/src/assets/images/lopar-pictures/covers/image-7.jpg"
-                                            class="card-img"
-                                            alt="image"
+                                            alt=""
                                         />
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
+                                    <div class="swiper-slide">
                                         <img
+                                            data-index="7"
+                                            data-toggle="thumbnail-carousel"
+                                            data-target="#carousel-example-in-thumbnail-carousel-backdrop"
                                             src="/src/assets/images/lopar-pictures/covers/image-8.jpg"
-                                            class="card-img"
-                                            alt="image"
+                                            alt=""
                                         />
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
+                                    <div class="swiper-slide">
                                         <img
+                                            data-index="8"
+                                            data-toggle="thumbnail-carousel"
+                                            data-target="#carousel-example-in-thumbnail-carousel-backdrop"
                                             src="/src/assets/images/lopar-pictures/covers/image-9.jpg"
-                                            class="card-img"
-                                            alt="image"
+                                            alt=""
                                         />
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
+                                    <div class="swiper-slide">
                                         <img
+                                            data-index="9"
+                                            data-toggle="thumbnail-carousel"
+                                            data-target="#carousel-example-in-thumbnail-carousel-backdrop"
                                             src="/src/assets/images/lopar-pictures/covers/image-10.jpg"
-                                            class="card-img"
-                                            alt="image"
+                                            alt=""
                                         />
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-image">
+                                    <div class="swiper-slide">
                                         <img
+                                            data-index="10"
+                                            data-toggle="thumbnail-carousel"
+                                            data-target="#carousel-example-in-thumbnail-carousel-backdrop"
                                             src="/src/assets/images/lopar-pictures/covers/image-11.jpg"
-                                            class="card-img"
-                                            alt="image"
+                                            alt=""
                                         />
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="carousel-angles">
+                                <span class="carousel-angle prev btn btn-circle-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                        <path
+                                            d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"
+                                        />
+                                    </svg>
+                                </span>
+                                <span class="carousel-angle next btn btn-circle-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                        <path
+                                            d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"
+                                        />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <script>
+                            const carouselExampleInThumbnailCarousel = new Swiper(
+                                "#carousel-example-in-thumbnail-carousel .swiper",
+                                {
+                                    slidesPerView: 1,
+                                    // slidesPerGroup:4,
+                                    speed: 700,
+                                    spaceBetween: 10,
+                                    navigation: {
+                                        nextEl: "#carousel-example-in-thumbnail-carousel .next",
+                                        prevEl: "#carousel-example-in-thumbnail-carousel .prev",
+                                    },
+                                    breakpoints: null,
+                                }
+                            );
+
+                            carouselExampleInThumbnailCarousel.on("slideChange", function (e) {
+                                const firstCarouselInstance = carouselExampleInThumbnailCarousel;
+                                const secondCarouselInstance = carouselExampleInThumbnailCarouselThumbnails;
+                                const secondCarouselId = "#carousel-example-in-thumbnail-carousel-thumbnails";
+
+                                const activeIndex = firstCarouselInstance.activeIndex;
+                                secondCarouselInstance.slideTo(activeIndex);
+
+                                const secondCarousel = document.querySelector(secondCarouselId);
+                                const thumbnails = secondCarousel.querySelectorAll(".swiper img");
+                                const activeThumbnail = secondCarousel.querySelector(".swiper img.active");
+
+                                if (activeThumbnail) activeThumbnail.classList.remove("active");
+                                thumbnails[activeIndex].classList.add("active");
+                            });
+                        </script>
+
+                        <!-- SECOND CAROUSEL -->
+                        <div class="thumbnails">
+                            <div
+                                class="carousel"
+                                id="carousel-example-in-thumbnail-carousel-thumbnails"
+                                data-instance-name="carouselExampleInThumbnailCarouselThumbnails"
+                            >
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img
+                                                class="active"
+                                                data-toggle="thumbnail"
+                                                data-index="0"
+                                                src="/src/assets/images/lopar-pictures/covers/image-1.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                data-toggle="thumbnail"
+                                                data-index="1"
+                                                src="/src/assets/images/lopar-pictures/covers/image-2.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                data-toggle="thumbnail"
+                                                data-index="2"
+                                                src="/src/assets/images/lopar-pictures/covers/image-3.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                data-toggle="thumbnail"
+                                                data-index="3"
+                                                src="/src/assets/images/lopar-pictures/covers/image-4.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                data-toggle="thumbnail"
+                                                data-index="4"
+                                                src="/src/assets/images/lopar-pictures/covers/image-5.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                data-toggle="thumbnail"
+                                                data-index="5"
+                                                src="/src/assets/images/lopar-pictures/covers/image-6.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                data-toggle="thumbnail"
+                                                data-index="6"
+                                                src="/src/assets/images/lopar-pictures/covers/image-7.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                data-toggle="thumbnail"
+                                                data-index="7"
+                                                src="/src/assets/images/lopar-pictures/covers/image-8.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                data-toggle="thumbnail"
+                                                data-index="8"
+                                                src="/src/assets/images/lopar-pictures/covers/image-9.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                data-toggle="thumbnail"
+                                                data-index="9"
+                                                src="/src/assets/images/lopar-pictures/covers/image-10.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                data-toggle="thumbnail"
+                                                data-index="10"
+                                                src="/src/assets/images/lopar-pictures/covers/image-11.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="carousel-angles">
+                                    <span class="carousel-angle prev btn btn-circle-dark">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                            <path
+                                                d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"
+                                            />
+                                        </svg>
+                                    </span>
+                                    <span class="carousel-angle next btn btn-circle-dark">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                            <path
+                                                d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"
+                                            />
+                                        </svg>
+                                    </span>
+                                </div> -->
+                            </div>
+                            <script>
+                                const carouselExampleInThumbnailCarouselThumbnails = new Swiper(
+                                    "#carousel-example-in-thumbnail-carousel-thumbnails .swiper",
+                                    {
+                                        slidesPerView: "auto",
+                                        // slidesPerGroup:4,
+                                        spaceBetween: 10,
+                                        navigation: {
+                                            nextEl: "#carousel-example-in-thumbnail-carousel-thumbnails .next",
+                                            prevEl: "#carousel-example-in-thumbnail-carousel-thumbnails .prev",
+                                        },
+                                        breakpoints: null,
+                                    }
+                                );
+
+                                carouselExampleInThumbnailCarouselThumbnails.on("click", function (e) {
+                                    const activeIndex = e.clickedIndex;
+                                    const firstCarouselInstance = carouselExampleInThumbnailCarousel;
+                                    firstCarouselInstance.slideTo(activeIndex);
+                                });
+                            </script>
                         </div>
 
-                        <div class="swiper-custom-center">
-                            <span class="swiper-custom-angle prev btn btn-circle-light btn-xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                        <!-- THIRD CAROUSEL -->
+                        <!-- keep backdrop to display none in tag itself to avoid focus interactions initially  -->
+                        <div class="backdrop" style="display: none">
+                            <button
+                                class="btn btn-circle-light btn-lg backdrop-closer"
+                                data-dismiss="thumbnail-carousel"
+                                data-target="#carousel-example-in-thumbnail-carousel-backdrop"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
-                                        d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"
+                                        d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
                                     />
                                 </svg>
-                            </span>
-                            <span class="swiper-custom-angle next btn btn-circle-light btn-xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
-                                    <path
-                                        d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"
-                                    />
-                                </svg>
-                            </span>
+                            </button>
+
+                            <!-- carousel data-instance-name should be the same as the Swiper instance name (instanceName = new Swiper)  -->
+                            <div
+                                class="carousel"
+                                id="carousel-example-in-thumbnail-carousel-backdrop"
+                                data-instance-name="carouselExampleInThumbnailCarouselBackdrop"
+                            >
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="/src/assets/images/lopar-pictures/covers/image-1.jpg"
+                                                alt="image"
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="/src/assets/images/lopar-pictures/covers/image-2.jpg"
+                                                alt="image"
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="/src/assets/images/lopar-pictures/covers/image-3.jpg"
+                                                alt="image"
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="/src/assets/images/lopar-pictures/covers/image-4.jpg"
+                                                alt="image"
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="/src/assets/images/lopar-pictures/covers/image-5.jpg"
+                                                alt="image"
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="/src/assets/images/lopar-pictures/covers/image-6.jpg"
+                                                alt="image"
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="/src/assets/images/lopar-pictures/covers/image-7.jpg"
+                                                alt="image"
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="/src/assets/images/lopar-pictures/covers/image-8.jpg"
+                                                alt="image"
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="/src/assets/images/lopar-pictures/covers/image-9.jpg"
+                                                alt="image"
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="/src/assets/images/lopar-pictures/covers/image-10.jpg"
+                                                alt="image"
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="/src/assets/images/lopar-pictures/covers/image-11.jpg"
+                                                alt="image"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-angles">
+                                    <span class="carousel-angle prev btn btn-circle-dark">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                            <path
+                                                d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"
+                                            />
+                                        </svg>
+                                    </span>
+                                    <span class="carousel-angle next btn btn-circle-dark">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                            <path
+                                                d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"
+                                            />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <script>
+                                const carouselExampleInThumbnailCarouselBackdrop = new Swiper(
+                                    "#carousel-example-in-thumbnail-carousel-backdrop .swiper",
+                                    {
+                                        slidesPerView: 1,
+                                        spaceBetween: 10,
+                                        breakpoints: null,
+                                        navigation: {
+                                            nextEl: "#carousel-example-in-thumbnail-carousel-backdrop .next",
+                                            prevEl: "#carousel-example-in-thumbnail-carousel-backdrop .prev",
+                                        },
+                                    }
+                                );
+                                window.carouselExampleInThumbnailCarouselBackdrop =
+                                    carouselExampleInThumbnailCarouselBackdrop;
+                            </script>
                         </div>
                     </div>
+                    <script src="/src/components/swiper/thumbnail-carousel/thumbnail-carousel.js"></script>
                 </div>
-
-                <!-- <script>
-                    (function(){
-                        const loparPicturesLightbox = document.querySelector("#lopar-pictures-lightbox");
-                        // const swiperImage = loparPicturesLightbox.querySelector(".swiper-image");
-                        // const swiperCustomAngle = loparPicturesLightbox.querySelector(".swiper-custom-center");
-                        
-                        // swiperImage.addEventListener("click", (e) => e.stopPropagation());
-                        // swiperCustomAngle.addEventListener("click", (e) => e.stopPropagation());
-                        loparPicturesLightbox.addEventListener("click", (e) => e.stopPropagation());
-                    })()
-                </script> -->
             </section>
 
             <section class="tourist">
-                <div class="container-small">
+                <div class="container-small lightbox">
                     <h3 class="display-3 tourist-title">Lopar - the perfect tourist destination</h3>
-                    <div class="tourist-image" data-toggle="modal" data-target="#tourist-modal">
-                        <img src="/src/assets/images/tourist-destination/cover.jpg" alt="" />
+                    <div class="tourist-image">
+                        <img
+                            src="/src/assets/images/tourist-destination/cover.jpg"
+                            alt=""
+                            data-index="0"
+                            data-toggle="lightbox"
+                            data-target="#carousel-example-in-lightbox-backdrop"
+                        />
+                    </div>
+                    <!-- keep backdrop to display none in tag itself to avoid focus interactions initially  -->
+                    <div class="backdrop" style="display: none">
+                        <button
+                            class="btn btn-circle-light btn-lg backdrop-closer"
+                            data-dismiss="lightbox"
+                            data-target="#carousel-example-in-lightbox-backdrop"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path
+                                    d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+                                />
+                            </svg>
+                        </button>
+
+                        <!-- carousel data-instance-name should be the same as the Swiper instance name (instanceName = new Swiper)  -->
+                        <div
+                            class="carousel"
+                            id="carousel-example-in-lightbox-backdrop"
+                            data-instance-name="carouselExampleInLightboxBackdrop"
+                        >
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-1.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-2.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-3.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-4.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-5.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-6.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-7.jpg" alt="image" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-angles">
+                                <span class="carousel-angle prev btn btn-circle-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                        <path
+                                            d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"
+                                        />
+                                    </svg>
+                                </span>
+                                <span class="carousel-angle next btn btn-circle-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                        <path
+                                            d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"
+                                        />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <script>
+                            const carouselExampleInLightboxBackdrop = new Swiper(
+                                "#carousel-example-in-lightbox-backdrop .swiper",
+                                {
+                                    slidesPerView: 1,
+                                    spaceBetween: 10,
+                                    breakpoints: null,
+                                    navigation: {
+                                        nextEl: "#carousel-example-in-lightbox-backdrop .next",
+                                        prevEl: "#carousel-example-in-lightbox-backdrop .prev",
+                                    },
+                                }
+                            );
+                            window.carouselExampleInLightboxBackdrop = carouselExampleInLightboxBackdrop;
+                        </script>
                     </div>
                     <p class="tourist-description text-1">
                         The town of Lopar (Rab, Croatia) is a perfect vacation destination thanks to really pleasant
@@ -552,40 +657,6 @@
                         tourists visited this town more than 100 years ago and, since that time, it has continued to
                         develop as a tourist destination. Visit Lopar and experience the perfect holiday.
                     </p>
-                </div>
-
-                <div class="modal fade" style="display: none" id="tourist-modal" tabindex="-1">
-                    <button type="button" class="btn-lg btn-close btn btn-circle-light" data-dismiss="modal">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                            <path
-                                d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
-                            />
-                        </svg>
-                    </button>
-                    <div class="wrapper">
-                        <div class="gallery">
-                            <img src="/src/assets/images/lopar-pictures/covers/image-1.jpg" alt="" />
-                            <img src="/src/assets/images/lopar-pictures/covers/image-2.jpg" alt="" />
-                            <img src="/src/assets/images/lopar-pictures/covers/image-3.jpg" alt="" />
-                            <img src="/src/assets/images/lopar-pictures/covers/image-4.jpg" alt="" />
-                            <img src="/src/assets/images/lopar-pictures/covers/image-5.jpg" alt="" />
-                            <!-- <div class="gallery-image gallery-image-1">
-                            <img src="/src/assets/images/lopar-pictures/covers/image-1.jpg" alt="" />
-                        </div>
-                        <div class="gallery-image gallery-image-2">
-                            <img src="/src/assets/images/lopar-pictures/covers/image-2.jpg" alt="" />
-                        </div>
-                        <div class="gallery-image gallery-image-3">
-                            <img src="/src/assets/images/lopar-pictures/covers/image-3.jpg" alt="" />
-                        </div>
-                        <div class="gallery-image gallery-image-4">
-                            <img src="/src/assets/images/lopar-pictures/covers/image-4.jpg" alt="" />
-                        </div>
-                        <div class="gallery-image gallery-image-5">
-                            <img src="/src/assets/images/lopar-pictures/covers/image-5.jpg" alt="" />
-                        </div> -->
-                        </div>
-                    </div>
                 </div>
             </section>
 
@@ -599,7 +670,7 @@
                                 <img src="/src/assets/images/accommodation/image-2.jpg" alt="" />
                                 <img src="/src/assets/images/accommodation/image-3.jpg" alt="" />
                             </div>
-                            <div  class="studio-footer">
+                            <div class="studio-footer">
                                 <h5 class="display-5 studio-title">Apartments in Lopar</h5>
                             </div>
                         </a>
@@ -610,7 +681,7 @@
                                 <img src="/src/assets/images/lopar-pictures/covers/image-10.jpg" alt="" />
                                 <img src="/src/assets/images/lopar-pictures/covers/image-10.jpg" alt="" />
                             </div>
-                            <div  class="studio-footer">
+                            <div class="studio-footer">
                                 <h5 class="display-5 studio-title">Rooms in Lopar</h5>
                             </div>
                         </a>
@@ -619,10 +690,95 @@
             </section>
 
             <section class="sports">
-                <div class="container-small">
+                <div class="container-small lightbox">
                     <h3 class="display-3 sports-title">Sports and Entertainment in Lopar</h3>
-                    <div class="sports-image" data-toggle="modal" data-target="#sports-modal">
-                        <img src="/src/assets/images/sports/cover.jpg" alt="" />
+                    <div class="sports-image">
+                        <img
+                            src="/src/assets/images/sports/cover.jpg"
+                            alt=""
+                            data-index="0"
+                            data-toggle="lightbox"
+                            data-target="#carousel-example-in-lightbox-backdrop-2"
+                        />
+                    </div>
+                    <!-- keep backdrop to display none in tag itself to avoid focus interactions initially  -->
+                    <div class="backdrop" style="display: none">
+                        <button
+                            class="btn btn-circle-light btn-lg backdrop-closer"
+                            data-dismiss="lightbox"
+                            data-target="#carousel-example-in-lightbox-backdrop-2"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path
+                                    d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+                                />
+                            </svg>
+                        </button>
+
+                        <!-- carousel data-instance-name should be the same as the Swiper instance name (instanceName = new Swiper)  -->
+                        <div
+                            class="carousel"
+                            id="carousel-example-in-lightbox-backdrop-2"
+                            data-instance-name="carouselExampleInLightboxBackdrop2"
+                        >
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-1.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-2.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-3.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-4.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-5.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-6.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-7.jpg" alt="image" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-angles">
+                                <span class="carousel-angle prev btn btn-circle-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                        <path
+                                            d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"
+                                        />
+                                    </svg>
+                                </span>
+                                <span class="carousel-angle next btn btn-circle-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                        <path
+                                            d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"
+                                        />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <script>
+                            const carouselExampleInLightboxBackdrop2 = new Swiper(
+                                "#carousel-example-in-lightbox-backdrop-2 .swiper",
+                                {
+                                    slidesPerView: 1,
+                                    spaceBetween: 10,
+                                    breakpoints: null,
+                                    navigation: {
+                                        nextEl: "#carousel-example-in-lightbox-backdrop-2 .next",
+                                        prevEl: "#carousel-example-in-lightbox-backdrop-2 .prev",
+                                    },
+                                }
+                            );
+                            window.carouselExampleInLightboxBackdrop2 = carouselExampleInLightboxBackdrop2;
+                        </script>
                     </div>
                     <p class="sports-description text-1">
                         After finding and settling in to suitable accommodation, Lopar will surprise you with a variety
@@ -635,32 +791,98 @@
                         bars and excursions to the Islands of Goli and Grgur.
                     </p>
                 </div>
-
-                <div class="modal fade" style="display: none" id="sports-modal" tabindex="-1">
-                    <button type="button" class="btn-lg btn-close btn btn-circle-light" data-dismiss="modal">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                            <path
-                                d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
-                            />
-                        </svg>
-                    </button>
-                    <div class="wrapper">
-                        <div class="gallery">
-                            <img src="/src/assets/images/lopar-pictures/covers/image-1.jpg" alt="" />
-                            <img src="/src/assets/images/lopar-pictures/covers/image-2.jpg" alt="" />
-                            <img src="/src/assets/images/lopar-pictures/covers/image-3.jpg" alt="" />
-                            <img src="/src/assets/images/lopar-pictures/covers/image-4.jpg" alt="" />
-                            <img src="/src/assets/images/lopar-pictures/covers/image-5.jpg" alt="" />
-                        </div>
-                    </div>
-                </div>
             </section>
 
             <section class="history">
-                <div class="container-small">
+                <div class="container-small lightbox">
                     <h3 class="display-3 history-title">Landmarks and History of Lopar</h3>
-                    <div class="history-image" data-toggle="modal" data-target="#history-modal">
-                        <img src="/src/assets/images/history/cover.png" alt="" />
+                    <div class="history-image">
+                        <img
+                            src="/src/assets/images/history/cover.png"
+                            alt=""
+                            data-index="0"
+                            data-toggle="lightbox"
+                            data-target="#carousel-example-in-lightbox-backdrop-3"
+                        />
+                    </div>
+                    <!-- keep backdrop to display none in tag itself to avoid focus interactions initially  -->
+                    <div class="backdrop" style="display: none">
+                        <button
+                            class="btn btn-circle-light btn-lg backdrop-closer"
+                            data-dismiss="lightbox"
+                            data-target="#carousel-example-in-lightbox-backdrop-3"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path
+                                    d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+                                />
+                            </svg>
+                        </button>
+
+                        <!-- carousel data-instance-name should be the same as the Swiper instance name (instanceName = new Swiper)  -->
+                        <div
+                            class="carousel"
+                            id="carousel-example-in-lightbox-backdrop-3"
+                            data-instance-name="carouselExampleInLightboxBackdrop3"
+                        >
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-1.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-2.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-3.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-4.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-5.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-6.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-7.jpg" alt="image" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-angles">
+                                <span class="carousel-angle prev btn btn-circle-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                        <path
+                                            d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"
+                                        />
+                                    </svg>
+                                </span>
+                                <span class="carousel-angle next btn btn-circle-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                        <path
+                                            d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"
+                                        />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <script>
+                            const carouselExampleInLightboxBackdrop3 = new Swiper(
+                                "#carousel-example-in-lightbox-backdrop-3 .swiper",
+                                {
+                                    slidesPerView: 1,
+                                    spaceBetween: 10,
+                                    breakpoints: null,
+                                    navigation: {
+                                        nextEl: "#carousel-example-in-lightbox-backdrop-3 .next",
+                                        prevEl: "#carousel-example-in-lightbox-backdrop-3 .prev",
+                                    },
+                                }
+                            );
+                            window.carouselExampleInLightboxBackdrop3 = carouselExampleInLightboxBackdrop3;
+                        </script>
                     </div>
                     <p class="history-description text-1">
                         On the territory of Lopar, there are traces of settlement that go back in history all the way to
@@ -671,32 +893,98 @@
                         Marino. Saint Marin's image is located on the emblem of the town of Lopar.
                     </p>
                 </div>
-
-                <div class="modal fade" style="display: none" id="history-modal" tabindex="-1">
-                    <button type="button" class="btn-lg btn-close btn btn-circle-light" data-dismiss="modal">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                            <path
-                                d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
-                            />
-                        </svg>
-                    </button>
-                    <div class="wrapper">
-                        <div class="gallery">
-                            <img src="/src/assets/images/lopar-pictures/covers/image-1.jpg" alt="" />
-                            <img src="/src/assets/images/lopar-pictures/covers/image-2.jpg" alt="" />
-                            <img src="/src/assets/images/lopar-pictures/covers/image-3.jpg" alt="" />
-                            <img src="/src/assets/images/lopar-pictures/covers/image-4.jpg" alt="" />
-                            <img src="/src/assets/images/lopar-pictures/covers/image-5.jpg" alt="" />
-                        </div>
-                    </div>
-                </div>
             </section>
 
             <section class="places">
-                <div class="container-small">
+                <div class="container-small lightbox">
                     <h3 class="display-3 places-title">Island of Rab - places and information</h3>
-                    <div class="places-image" data-toggle="modal" data-target="#places-modal">
-                        <img src="/src/assets/images/places/cover.jpg" alt="" />
+                    <div class="places-image">
+                        <img
+                            src="/src/assets/images/places/cover.jpg"
+                            alt=""
+                            data-index="0"
+                            data-toggle="lightbox"
+                            data-target="#carousel-example-in-lightbox-backdrop-4"
+                        />
+                    </div>
+                    <!-- keep backdrop to display none in tag itself to avoid focus interactions initially  -->
+                    <div class="backdrop" style="display: none">
+                        <button
+                            class="btn btn-circle-light btn-lg backdrop-closer"
+                            data-dismiss="lightbox"
+                            data-target="#carousel-example-in-lightbox-backdrop-4"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path
+                                    d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+                                />
+                            </svg>
+                        </button>
+
+                        <!-- carousel data-instance-name should be the same as the Swiper instance name (instanceName = new Swiper)  -->
+                        <div
+                            class="carousel"
+                            id="carousel-example-in-lightbox-backdrop-4"
+                            data-instance-name="carouselExampleInLightboxBackdrop4"
+                        >
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-1.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-2.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-3.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-4.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-5.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-6.jpg" alt="image" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/src/assets/images/lopar-pictures/covers/image-7.jpg" alt="image" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-angles">
+                                <span class="carousel-angle prev btn btn-circle-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                        <path
+                                            d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"
+                                        />
+                                    </svg>
+                                </span>
+                                <span class="carousel-angle next btn btn-circle-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                        <path
+                                            d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"
+                                        />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <script>
+                            const carouselExampleInLightboxBackdrop4 = new Swiper(
+                                "#carousel-example-in-lightbox-backdrop-4 .swiper",
+                                {
+                                    slidesPerView: 1,
+                                    spaceBetween: 10,
+                                    breakpoints: null,
+                                    navigation: {
+                                        nextEl: "#carousel-example-in-lightbox-backdrop-4 .next",
+                                        prevEl: "#carousel-example-in-lightbox-backdrop-4 .prev",
+                                    },
+                                }
+                            );
+                            window.carouselExampleInLightboxBackdrop4 = carouselExampleInLightboxBackdrop4;
+                        </script>
                     </div>
                     <p class="places-description text-1">
                         If you wish to travel to Lopar, you should know some facts about the whole island of Rab. It is
@@ -708,25 +996,6 @@
                         Although Rab is one of the smaller islands on the Adriatic, it is extremely popular for its
                         tourist attractions, sights, landmarks and preserved nature.
                     </p>
-                </div>
-
-                <div class="modal fade" style="display: none" id="places-modal" tabindex="-1">
-                    <button type="button" class="btn-lg btn-close btn btn-circle-light" data-dismiss="modal">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                            <path
-                                d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
-                            />
-                        </svg>
-                    </button>
-                    <div class="wrapper">
-                        <div class="gallery">
-                            <img src="/src/assets/images/lopar-pictures/covers/image-1.jpg" alt="" />
-                            <img src="/src/assets/images/lopar-pictures/covers/image-2.jpg" alt="" />
-                            <img src="/src/assets/images/lopar-pictures/covers/image-3.jpg" alt="" />
-                            <img src="/src/assets/images/lopar-pictures/covers/image-4.jpg" alt="" />
-                            <img src="/src/assets/images/lopar-pictures/covers/image-5.jpg" alt="" />
-                        </div>
-                    </div>
                 </div>
             </section>
         </main>
