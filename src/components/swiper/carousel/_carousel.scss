@@ -54,3 +54,15 @@
     opacity: 0 !important;
     pointer-events: none;
 }
+
+.swiper-pagination {
+    z-index: 10;
+    &-bullet {
+        background-color: #fff !important;
+        transition: opacity .3s ease;
+        padding: 6px;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}

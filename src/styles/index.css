@@ -1150,6 +1150,18 @@ section {
   pointer-events: none;
 }
 
+.swiper-pagination {
+  z-index: 10;
+}
+.swiper-pagination-bullet {
+  background-color: #fff !important;
+  transition: opacity 0.3s ease;
+  padding: 6px;
+}
+.swiper-pagination-bullet:hover {
+  opacity: 0.5;
+}
+
 .lightbox .backdrop {
   padding: 30px;
   position: fixed;
@@ -1158,7 +1170,7 @@ section {
   width: 100%;
   height: 100%;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   transition: opacity 0.3s ease;
 }
 .lightbox .backdrop:not(.show) {
@@ -1185,8 +1197,11 @@ section {
   display: block;
   height: 100%;
   width: 100%;
+  max-width: 1700px;
   -o-object-fit: contain;
      object-fit: contain;
+  filter: drop-shadow(0px 0px 10px black);
+  padding: 50px 30px;
 }
 .lightbox .backdrop > .carousel .carousel-angle {
   background-color: #fff;
@@ -1202,6 +1217,9 @@ section {
      object-fit: contain;
   margin: 0 auto;
   display: block;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.2s ease;
 }
 .thumbnail-carousel .thumbnails {
   width: -moz-fit-content;
@@ -1214,6 +1232,7 @@ section {
   height: 80px;
   -o-object-fit: cover;
      object-fit: cover;
+  cursor: pointer;
 }
 .thumbnail-carousel .thumbnails img.active {
   border: 4px solid #000;
@@ -1231,7 +1250,7 @@ section {
   width: 100%;
   height: 100%;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   transition: opacity 0.3s ease;
 }
 .thumbnail-carousel .backdrop:not(.show) {
@@ -1262,7 +1281,7 @@ section {
   -o-object-fit: contain;
      object-fit: contain;
   filter: drop-shadow(0px 0px 10px black);
-  padding: 30px;
+  padding: 50px 30px;
 }
 .thumbnail-carousel .backdrop > .carousel .carousel-angle {
   background-color: #fff;
