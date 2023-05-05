@@ -62,7 +62,7 @@ const Lightbox = (function () {
     const init = (e) => {
         const toggle = e.target.closest("[data-toggle='lightbox']");
         const dismiss = e.target.closest('[data-dismiss="lightbox"]');
-
+   
         if (toggle) showBackdrop(toggle);
         if (dismiss) hideBackdrop(dismiss);
     };

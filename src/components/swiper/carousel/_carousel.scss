@@ -57,6 +57,10 @@
 
 .swiper-pagination {
     z-index: 10;
+    display: none;
+    @include mq(768px) {
+        display: block;
+    }
     &-bullet {
         background-color: #fff !important;
         transition: opacity .3s ease;

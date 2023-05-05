@@ -1152,6 +1152,12 @@ section {
 
 .swiper-pagination {
   z-index: 10;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .swiper-pagination {
+    display: block;
+  }
 }
 .swiper-pagination-bullet {
   background-color: #fff !important;
@@ -1163,7 +1169,6 @@ section {
 }
 
 .lightbox .backdrop {
-  padding: 30px;
   position: fixed;
   top: 0;
   left: 0;
@@ -1200,8 +1205,8 @@ section {
   max-width: 1700px;
   -o-object-fit: contain;
      object-fit: contain;
-  filter: drop-shadow(0px 0px 10px black);
   padding: 50px 30px;
+  filter: drop-shadow(0px 0px 10px black);
 }
 .lightbox .backdrop > .carousel .carousel-angle {
   background-color: #fff;
@@ -1211,7 +1216,7 @@ section {
   margin: 0 40px 40px;
 }
 .thumbnail-carousel > .carousel img {
-  height: 600px;
+  max-height: 600px;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -2188,6 +2193,7 @@ section {
   width: 100%;
   padding-top: 70%;
   height: 0;
+  cursor: pointer;
 }
 .apartment-card .card-header:after {
   content: "";
@@ -2198,7 +2204,7 @@ section {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   opacity: 0;
-  cursor: pointer;
+  pointer-events: none;
   transition: opacity 0.3s ease;
 }
 @media screen and (min-width: 992px) {
@@ -2218,6 +2224,7 @@ section {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
 }
 .apartment-card .card-body {
   padding: 30px;
