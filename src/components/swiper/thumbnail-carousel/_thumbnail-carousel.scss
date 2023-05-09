@@ -19,7 +19,7 @@
             display: block;
             &-bullet {
                 padding: 3px;
-              
+                background-color: #000 !important;
             }
             @include mq(768px){
                 display: none;
