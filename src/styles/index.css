@@ -1545,7 +1545,6 @@ section {
   padding-top: 90%;
   position: relative;
   align-self: center;
-  cursor: pointer;
 }
 @media screen and (min-width: 992px) {
   .tourist-image {
@@ -1558,21 +1557,6 @@ section {
   .tourist-image {
     margin-top: -60px;
   }
-}
-.tourist-image:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.tourist-image:hover:after {
-  opacity: 1;
 }
 .tourist-image img {
   position: absolute;
@@ -1726,7 +1710,6 @@ section {
   padding-top: 90%;
   position: relative;
   align-self: center;
-  cursor: pointer;
 }
 @media screen and (min-width: 992px) {
   .sports-image {
@@ -1734,21 +1717,6 @@ section {
     width: 100%;
     padding-top: 120%;
   }
-}
-.sports-image:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.sports-image:hover:after {
-  opacity: 1;
 }
 .sports-image img {
   position: absolute;
@@ -1808,7 +1776,6 @@ section {
   padding-top: 90%;
   position: relative;
   align-self: center;
-  cursor: pointer;
 }
 @media screen and (min-width: 992px) {
   .history-image {
@@ -1816,21 +1783,6 @@ section {
     width: 100%;
     padding-top: 120%;
   }
-}
-.history-image:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.history-image:hover:after {
-  opacity: 1;
 }
 .history-image img {
   position: absolute;
