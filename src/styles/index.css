@@ -2516,6 +2516,22 @@ section {
   width: 100%;
   margin-bottom: 10px;
   display: block;
+  cursor: pointer;
+}
+.beach-card .card-image:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.beach-card .card-image:hover::after {
+  opacity: 1;
 }
 .beach-card .card-image img {
   position: absolute;
