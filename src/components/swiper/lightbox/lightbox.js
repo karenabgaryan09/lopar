@@ -43,17 +43,21 @@ const Lightbox = (function () {
 
         if (toggle.dataset.cover) {
             const image = items[0].querySelector("img");
-            image.src = "/src/assets/images/cover-preloader.gif";
-            image.style = "width: 100px";
-            const virtualImage = new Image();
-            virtualImage.src = toggle.dataset.cover;
-        
-            virtualImage.onerror = () => (image.src = "");
-            virtualImage.onload = ()=>{
-                image.style = "";
-                image.src = virtualImage.src;
+            image.src = ''
+            image.src = toggle.dataset.cover
 
-            }
+            // const image = items[0].querySelector("img");
+            // image.src = "/src/assets/images/cover-preloader.gif";
+            // image.style = "width: 100px";
+            // const virtualImage = new Image();
+            // virtualImage.src = toggle.dataset.cover;
+        
+            // virtualImage.onerror = () => (image.src = "");
+            // virtualImage.onload = ()=>{
+            //     image.style = "";
+            //     image.src = virtualImage.src;
+
+            // }
        
         }
     };

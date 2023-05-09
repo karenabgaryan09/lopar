@@ -386,6 +386,7 @@
         }
     }
     .appartment-studio {
+        flex: 1;
         .studio {
             &-body {
                 @include mq(360px) {
@@ -412,6 +413,7 @@
         }
     }
     .rooms-studio {
+        flex: 1;
         .studio {
             &-body {
                 @include mq(360px) {
