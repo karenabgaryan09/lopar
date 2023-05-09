@@ -788,9 +788,9 @@
                                     breakpoints: null,
                                     speed: 700,
                                     pagination: {
-                                            el: "#carousel-example-in-lightbox-backdrop-2 .swiper-pagination",
-                                            clickable: true,
-                                        },
+                                        el: "#carousel-example-in-lightbox-backdrop-2 .swiper-pagination",
+                                        clickable: true,
+                                    },
                                     navigation: {
                                         nextEl: "#carousel-example-in-lightbox-backdrop-2 .next",
                                         prevEl: "#carousel-example-in-lightbox-backdrop-2 .prev",
@@ -898,9 +898,9 @@
                                     breakpoints: null,
                                     speed: 700,
                                     pagination: {
-                                            el: "#carousel-example-in-lightbox-backdrop-3 .swiper-pagination",
-                                            clickable: true,
-                                        },
+                                        el: "#carousel-example-in-lightbox-backdrop-3 .swiper-pagination",
+                                        clickable: true,
+                                    },
                                     navigation: {
                                         nextEl: "#carousel-example-in-lightbox-backdrop-3 .next",
                                         prevEl: "#carousel-example-in-lightbox-backdrop-3 .prev",
@@ -991,8 +991,6 @@
                                     <div class="swiper-slide">
                                         <img src="/src/assets/images/beaches/rab/covers/rab-12.jpg" alt="image" />
                                     </div>
-                                 
-                                 
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
@@ -1022,10 +1020,14 @@
                                     spaceBetween: 10,
                                     breakpoints: null,
                                     speed: 700,
+                                    lazy: {
+                                        loadPrevNext: true, // pre-loads the next image to avoid showing a loading placeholder if possible
+                                        loadPrevNextAmount: 2, //or, if you wish, preload the next 2 images
+                                    },
                                     pagination: {
-                                            el: "#carousel-example-in-lightbox-backdrop-4 .swiper-pagination",
-                                            clickable: true,
-                                        },
+                                        el: "#carousel-example-in-lightbox-backdrop-4 .swiper-pagination",
+                                        clickable: true,
+                                    },
                                     navigation: {
                                         nextEl: "#carousel-example-in-lightbox-backdrop-4 .next",
                                         prevEl: "#carousel-example-in-lightbox-backdrop-4 .prev",
