@@ -143,7 +143,7 @@
                                             alt=""
                                             loading="lazy"
                                         />
-                                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                        <!-- <div class="swiper-lazy-preloader"></div> -->
                                     </div>
                                     <div class="swiper-slide">
                                         <img
@@ -154,7 +154,7 @@
                                             alt=""
                                             loading="lazy"
                                         />
-                                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                        <!-- <div class="swiper-lazy-preloader"></div> -->
                                     </div>
                                     <div class="swiper-slide">
                                         <img
@@ -165,7 +165,7 @@
                                             alt=""
                                             loading="lazy"
                                         />
-                                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                        <!-- <div class="swiper-lazy-preloader"></div> -->
                                     </div>
                                     <div class="swiper-slide">
                                         <img
@@ -176,7 +176,7 @@
                                             alt=""
                                             loading="lazy"
                                         />
-                                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                        <!-- <div class="swiper-lazy-preloader"></div> -->
                                     </div>
                                     <div class="swiper-slide">
                                         <img
@@ -187,7 +187,7 @@
                                             alt=""
                                             loading="lazy"
                                         />
-                                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                        <!-- <div class="swiper-lazy-preloader"></div> -->
                                     </div>
                                     <div class="swiper-slide">
                                         <img
@@ -198,7 +198,7 @@
                                             alt=""
                                             loading="lazy"
                                         />
-                                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                        <!-- <div class="swiper-lazy-preloader"></div> -->
                                     </div>
                                     <div class="swiper-slide">
                                         <img
@@ -209,7 +209,7 @@
                                             alt=""
                                             loading="lazy"
                                         />
-                                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                        <!-- <div class="swiper-lazy-preloader"></div> -->
                                     </div>
                                     <div class="swiper-slide">
                                         <img
@@ -220,7 +220,7 @@
                                             alt=""
                                             loading="lazy"
                                         />
-                                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                        <!-- <div class="swiper-lazy-preloader"></div> -->
                                     </div>
                                     <div class="swiper-slide">
                                         <img
@@ -231,7 +231,7 @@
                                             alt=""
                                             loading="lazy"
                                         />
-                                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                        <!-- <div class="swiper-lazy-preloader"></div> -->
                                     </div>
                                     <div class="swiper-slide">
                                         <img
@@ -242,7 +242,7 @@
                                             alt=""
                                             loading="lazy"
                                         />
-                                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                        <!-- <div class="swiper-lazy-preloader"></div> -->
                                     </div>
                                     <div class="swiper-slide">
                                         <img
@@ -253,9 +253,10 @@
                                             alt=""
                                             loading="lazy"
                                         />
-                                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                        <!-- <div class="swiper-lazy-preloader"></div> -->
                                     </div>
                                 </div>
+                                <div class="swiper-pagination"></div>
                             </div>
 
                             <div class="carousel-angles">
@@ -279,8 +280,14 @@
                             const carouselExampleInThumbnailCarousel = new Swiper(
                                 "#carousel-example-in-thumbnail-carousel .swiper",
                                 {
+                                    pagination: {
+                                        el: "#carousel-example-in-thumbnail-carousel .swiper-pagination",
+                                        clickable: true,
+                                    },
+                                    effect: "fade",
+                                    fadeEffect: { crossFade: true },
                                     preloadImages: false,
-                                    lazy: true,
+                                    // lazy: true,
                                     slidesPerView: 1,
                                     // slidesPerGroup:4,
                                     speed: 700,
@@ -307,6 +314,13 @@
 
                                 if (activeThumbnail) activeThumbnail.classList.remove("active");
                                 thumbnails[activeIndex].classList.add("active");
+
+                                // const slides = document.querySelectorAll('#carousel-example-in-thumbnail-carousel .swiper-slide')
+                                // slides.forEach(item=>{
+                                //     item.style.display = 'none'
+                                //     if(item.classList.contains('swiper-slide-next'))item.style.display = 'block'
+
+                                // })
                             });
                         </script>
 
@@ -324,7 +338,7 @@
                                                 class="active"
                                                 data-toggle="thumbnail"
                                                 data-index="0"
-                                                src="/src/assets/images/lopar-pictures/covers/lopar-1.jpg"
+                                                src="/src/assets/images/lopar-pictures/thumbnails/lopar-1.jpg"
                                                 alt=""
                                             />
                                         </div>
@@ -332,7 +346,7 @@
                                             <img
                                                 data-toggle="thumbnail"
                                                 data-index="1"
-                                                src="/src/assets/images/lopar-pictures/covers/lopar-2.jpg"
+                                                src="/src/assets/images/lopar-pictures/thumbnails/lopar-2.jpg"
                                                 alt=""
                                             />
                                         </div>
@@ -340,7 +354,7 @@
                                             <img
                                                 data-toggle="thumbnail"
                                                 data-index="2"
-                                                src="/src/assets/images/lopar-pictures/covers/lopar-3.jpg"
+                                                src="/src/assets/images/lopar-pictures/thumbnails/lopar-3.jpg"
                                                 alt=""
                                             />
                                         </div>
@@ -348,7 +362,7 @@
                                             <img
                                                 data-toggle="thumbnail"
                                                 data-index="3"
-                                                src="/src/assets/images/lopar-pictures/covers/lopar-4.jpg"
+                                                src="/src/assets/images/lopar-pictures/thumbnails/lopar-4.jpg"
                                                 alt=""
                                             />
                                         </div>
@@ -356,7 +370,7 @@
                                             <img
                                                 data-toggle="thumbnail"
                                                 data-index="4"
-                                                src="/src/assets/images/lopar-pictures/covers/lopar-5.jpg"
+                                                src="/src/assets/images/lopar-pictures/thumbnails/lopar-5.jpg"
                                                 alt=""
                                             />
                                         </div>
@@ -364,7 +378,7 @@
                                             <img
                                                 data-toggle="thumbnail"
                                                 data-index="5"
-                                                src="/src/assets/images/lopar-pictures/covers/lopar-6.jpg"
+                                                src="/src/assets/images/lopar-pictures/thumbnails/lopar-6.jpg"
                                                 alt=""
                                             />
                                         </div>
@@ -372,7 +386,7 @@
                                             <img
                                                 data-toggle="thumbnail"
                                                 data-index="6"
-                                                src="/src/assets/images/lopar-pictures/covers/lopar-7.jpg"
+                                                src="/src/assets/images/lopar-pictures/thumbnails/lopar-7.jpg"
                                                 alt=""
                                             />
                                         </div>
@@ -380,7 +394,7 @@
                                             <img
                                                 data-toggle="thumbnail"
                                                 data-index="7"
-                                                src="/src/assets/images/lopar-pictures/covers/lopar-8.jpg"
+                                                src="/src/assets/images/lopar-pictures/thumbnails/lopar-8.jpg"
                                                 alt=""
                                             />
                                         </div>
@@ -388,7 +402,7 @@
                                             <img
                                                 data-toggle="thumbnail"
                                                 data-index="8"
-                                                src="/src/assets/images/lopar-pictures/covers/lopar-9.jpg"
+                                                src="/src/assets/images/lopar-pictures/thumbnails/lopar-9.jpg"
                                                 alt=""
                                             />
                                         </div>
@@ -396,7 +410,7 @@
                                             <img
                                                 data-toggle="thumbnail"
                                                 data-index="9"
-                                                src="/src/assets/images/lopar-pictures/covers/lopar-10.jpg"
+                                                src="/src/assets/images/lopar-pictures/thumbnails/lopar-10.jpg"
                                                 alt=""
                                             />
                                         </div>
@@ -404,7 +418,7 @@
                                             <img
                                                 data-toggle="thumbnail"
                                                 data-index="10"
-                                                src="/src/assets/images/lopar-pictures/covers/lopar-11.jpg"
+                                                src="/src/assets/images/lopar-pictures/thumbnails/lopar-11.jpg"
                                                 alt=""
                                             />
                                         </div>
