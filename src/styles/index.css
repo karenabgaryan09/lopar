@@ -1217,8 +1217,13 @@ section {
 .thumbnail-carousel > .carousel {
   margin: 0 40px 40px;
 }
-.thumbnail-carousel > .carousel .swiper-slide-active img {
-  height: auto;
+.thumbnail-carousel > .carousel .swiper-slide {
+  padding-top: 100%;
+}
+@media screen and (min-width: 768px) {
+  .thumbnail-carousel > .carousel .swiper-slide {
+    padding-top: 56.25%;
+  }
 }
 .thumbnail-carousel > .carousel .swiper-pagination {
   display: block;
@@ -1231,13 +1236,9 @@ section {
     display: none;
   }
 }
-.thumbnail-carousel > .carousel .swiper-lazy-preloader {
-  margin-top: 50px;
-}
 .thumbnail-carousel > .carousel img {
-  max-height: 600px;
+  height: 100%;
   width: 100%;
-  height: 0;
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center;
@@ -1245,10 +1246,11 @@ section {
   margin: 0 auto;
   display: block;
   cursor: pointer;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   transition: transform 0.2s ease;
   z-index: 11;
-  position: relative;
 }
 .thumbnail-carousel .thumbnails {
   width: -moz-fit-content;
