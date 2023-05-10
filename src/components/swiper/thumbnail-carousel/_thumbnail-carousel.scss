@@ -1,22 +1,16 @@
 .thumbnail-carousel {
     & > .carousel {
-        // max-width: 700px;
         margin: 0 40px 40px;
         .swiper {
             overflow: visible;
         }
         .swiper-slide {
-            // min-height: 150px;
             padding-top: 100%;
             @include mq(768px){
                 padding-top: 56.25%;
 
             }
-            &-active {
-                img {
-                    // height: auto;
-                }
-            }
+       
         }
         .swiper-pagination {
             display: block;
@@ -47,16 +41,10 @@
             left: 0;
             transition:  transform .2s ease;
             z-index: 11;
-            &:hover {
-                // transform: scale(0.9);
-
-            }
-     
         }
     }
     .thumbnails {
         width: fit-content;
-        // max-width: 800px;
         margin: 0 auto;
         display: none;
         @include mq(768px){
@@ -84,7 +72,6 @@
     }
     // backdrop start
     .backdrop {
-        // padding: 30px;
         position: fixed;
         top: 0;
         left: 0;
@@ -99,9 +86,6 @@
             .swiper-slide-active {
                 pointer-events: none;
             }
-            // .carousel-angle {
-            //     pointer-events: none !important;
-            // }
         }
 
         &-closer {
