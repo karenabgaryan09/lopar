@@ -46,6 +46,7 @@
         }
         &-link {
             margin-bottom: 10px;
+            cursor: auto;
         }
     }
 
@@ -64,7 +65,7 @@
             margin: 0;
         }
         .btn {
-            min-width: none;
+            // min-width: none;
             justify-content: flex-start;
         }
 

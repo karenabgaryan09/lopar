@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -63,12 +63,10 @@
                         </svg>
                     </button>
                     <a class="nav-link active" href="/index.html">lopar</a>
-                    <a class="nav-link" data-text="accommodation" href="/src/pages/accommodation/accommodation.html"
-                        >accommodation</a
-                    >
+                    <a class="nav-link" href="/src/pages/accommodation/accommodation.html">accommodation</a>
                     <a class="nav-link" href="/src/pages/beaches/beaches.html">beaches</a>
-                    <a class="nav-link" href="#/">find us</a>
-                    <a class="nav-link" href="#/">contact us</a>
+                    <a class="nav-link" href="/src/pages/find-us/find-us.html">find us</a>
+                    <a class="nav-link" href="/src/pages/contact/contact.html">contact us</a>
                 </div>
                 <div class="navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto">
@@ -76,27 +74,27 @@
                             <a class="nav-link active" href="/index.html">lopar</a>
                         </li>
                         <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                data-text="accommodation"
-                                href="/src/pages/accommodation/accommodation.html"
-                                >accommodation</a
-                            >
+                            <a class="nav-link" href="/src/pages/accommodation/accommodation.html">accommodation</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/src/pages/beaches/beaches.html">beaches</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#/">find us</a>
+                            <a class="nav-link" href="/src/pages/find-us/find-us.html">find us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#/">contact us</a>
+                            <a class="nav-link" href="/src/pages/contact/contact.html">contact us</a>
                         </li>
                     </ul>
                 </div>
-                <div class="nav-item select">
-                    <div class="select-toggle nav-link btn btn-text-primary" data-toggle="select" data-outside="true">
-                        <span class="select-name">ENG</span>
+                <div class="select nav-item">
+                    <button class="select-toggle btn btn-text-primary" data-toggle="select">
+                        <div class="wrapper">
+                            <span class="startIcon">
+                                <img src="/src/assets/images/icons/flags/united-kingdom.png" alt="" />
+                            </span>
+                            <div class="select-toggle-title">ENG</div>
+                        </div>
                         <span class="endIcon select-toggle-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                 <path
@@ -104,11 +102,57 @@
                                 />
                             </svg>
                         </span>
-                    </div>
-                    <div class="select-menu">
-                        <a class="select-item">EST</a>
-                        <a class="select-item">RUS</a>
-                        <a class="select-item">FIN</a>
+                    </button>
+
+                    <div class="select-menu" id="google_translate_element">
+                        <a href="#/category/item-1" class="select-item">
+                            <span class="startIcon">
+                                <img src="/src/assets/images/icons/flags/united-kingdom.png" alt="" />
+                            </span>
+                            <div class="select-item-title">ENG</div>
+                        </a>
+                        <a href="#/category/item-1" class="select-item">
+                            <span class="startIcon">
+                                <img src="/src/assets/images/icons/flags/germany.png" alt="" />
+                            </span>
+                            <div class="select-item-title">DEU</div>
+                        </a>
+                        <a href="#/category/item-1" class="select-item">
+                            <span class="startIcon">
+                                <img src="/src/assets/images/icons/flags/italy.png" alt="" />
+                            </span>
+                            <div class="select-item-title">ITA</div>
+                        </a>
+                        <a href="#/category/item-1" class="select-item">
+                            <span class="startIcon">
+                                <img src="/src/assets/images/icons/flags/france.png" alt="" />
+                            </span>
+                            <div class="select-item-title">FRA</div>
+                        </a>
+                        <a href="#/category/item-1" class="select-item">
+                            <span class="startIcon">
+                                <img src="/src/assets/images/icons/flags/poland.png" alt="" />
+                            </span>
+                            <div class="select-item-title">POL</div>
+                        </a>
+                        <a href="#/category/item-1" class="select-item">
+                            <span class="startIcon">
+                                <img src="/src/assets/images/icons/flags/hungary.png" alt="" />
+                            </span>
+                            <div class="select-item-title">HUN</div>
+                        </a>
+                        <a href="#/category/item-1" class="select-item">
+                            <span class="startIcon">
+                                <img src="/src/assets/images/icons/flags/croatia.png" alt="" />
+                            </span>
+                            <div class="select-item-title">HR</div>
+                        </a>
+                        <a href="#/category/item-1" class="select-item">
+                            <span class="startIcon">
+                                <img src="/src/assets/images/icons/flags/slovenia.png" alt="" />
+                            </span>
+                            <div class="select-item-title">SVN</div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -265,7 +309,7 @@
                                         />
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
-                                 
+
                                     <div class="swiper-slide">
                                         <img
                                             data-index="12"
@@ -380,8 +424,6 @@
 
                                 if (activeThumbnail) activeThumbnail.classList.remove("active");
                                 thumbnails[activeIndex].classList.add("active");
-
-                            
                             });
                         </script>
 
@@ -490,7 +532,7 @@
                                                 alt=""
                                             />
                                         </div>
-                                     
+
                                         <div class="swiper-slide">
                                             <img
                                                 data-index="12"
@@ -533,8 +575,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-                        
                             </div>
                             <script>
                                 const carouselExampleInThumbnailCarouselThumbnails = new Swiper(
@@ -686,7 +726,7 @@
                                             />
                                             <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                                         </div>
-                                     
+
                                         <div class="swiper-slide">
                                             <img
                                                 src="/src/assets/images/lopar-pictures/covers/lopar-13.jpg"
@@ -784,7 +824,7 @@
                     <div class="tourist-image">
                         <img src="/src/assets/images/tourist.jpg" alt="" />
                     </div>
-         
+
                     <p class="tourist-description text-1">
                         The town of Lopar (Rab, Croatia) is a perfect vacation destination thanks to really pleasant
                         Mediterranean climate and preserved nature. Lopar is a perfect location for a relaxing holiday,
@@ -846,7 +886,7 @@
                     <div class="sports-image">
                         <img src="/src/assets/images/sports.jpg" alt="" />
                     </div>
-         
+
                     <p class="sports-description text-1">
                         After finding and settling in to suitable accommodation, Lopar will surprise you with a variety
                         of sports and leisure activities which you can enjoy during your vacation. If you are the
@@ -866,7 +906,7 @@
                     <div class="history-image">
                         <img src="/src/assets/images/history.webp" alt="" />
                     </div>
-           
+
                     <p class="history-description text-1">
                         On the territory of Lopar, there are traces of settlement that go back in history all the way to
                         the New Stone Age. This settlement lasted through the Stone Age, Copper and Bronze Age until 4th
